@@ -1,0 +1,147 @@
+{
+  "nav": {
+    "about": "About",
+    "tech": "Tech Stack",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Trần Công Tính",
+    "roles": ["Java Backend Developer", "Microservices Architect", "Blockchain Integrator", "AI Enthusiast"],
+    "bio_paragraphs": [
+      "I am a Software Developer dedicated to engineering resilient backend systems and scalable microservices architectures.",
+      "Specializing in the Java/Spring Boot ecosystem, I design distributed APIs, implement event-driven architectures with RabbitMQ, and build AI-enhanced & blockchain-integrated platforms.",
+      "I thrive in collaborative agile environments, bringing a complex problem-solving mindset and a commitment to continuous learning to every phase of the software development lifecycle."
+    ],
+    "cta_projects": "View Projects",
+    "cta_contact": "Get In Touch",
+    "cta_cv": "Download CV",
+    "experience_with": "EXPERIENCE WITH"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Get to know me better",
+    "bio": "I'm a passionate backend developer focused on building robust, scalable systems. With hands-on experience in microservices, blockchain integration, and AI-powered features, I bridge the gap between cutting-edge technology and practical applications.",
+    "stats": {
+      "projects": "Projects Built",
+      "services": "Microservices",
+      "contract_lines": "Lines of Solidity",
+      "commits": "GitHub Commits"
+    }
+  },
+  "tech": {
+    "title": "Tech Stack",
+    "subtitle": "Technologies I work with",
+    "categories": {
+      "backend": "Backend & Architecture",
+      "database": "Databases & Big Data",
+      "realtime": "Real-time & AI / Web3",
+      "infra": "Infrastructure & DevOps",
+      "frontend": "Frontend"
+    }
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "What I've built",
+    "view_code": "Source Code",
+    "live_demo": "Live Demo",
+    "items": [
+      {
+        "title": "SmartRental — AI & Blockchain Rental Platform",
+        "role": "Leader",
+        "duration": "4 months",
+        "description": [
+          "Designed and implemented all core backend features for residential rental management with Spring Boot & PostgreSQL.",
+          "Integrated AI-powered chatbot using LangChain4j with Gemini 2.5 Flash API and in-memory vector store for RAG.",
+          "Deployed 595-line Solidity smart contracts on Ethereum Sepolia for immutable lease agreements with EIP-712 signatures.",
+          "Implemented role-based access control using JWT authentication and Spring Security."
+        ],
+        "tags": ["Spring Boot", "LangChain4j", "Solidity", "React", "PostgreSQL", "Web3j", "JWT", "Docker"],
+        "github": "https://github.com/Hnit04/KLTN_SmartRental",
+        "highlights": ["Gemini AI RAG Chatbot", "595-line Smart Contract", "EIP-712 Signatures"]
+      },
+      {
+        "title": "Household Appliance E-Commerce Platform",
+        "role": "Leader",
+        "duration": "3 months",
+        "description": [
+          "Architected 7 independent microservices — User, Product, Cart, Order, Payment, Promotion, Notification — each with its own MongoDB database.",
+          "Implemented event-driven notifications via RabbitMQ for asynchronous messaging between services.",
+          "Integrated SEPay QR code payment with real-time WebSocket status updates.",
+          "Orchestrated all services with Spring Cloud Gateway and Docker Compose."
+        ],
+        "tags": ["Microservices", "Spring Cloud Gateway", "RabbitMQ", "MongoDB", "Docker", "React", "WebSocket", "SEPay"],
+        "github": "https://github.com/Hnit04/WebsiteBanDoGiaDung",
+        "demo": "https://tht-giadungthongminh.vercel.app/",
+        "highlights": ["7 Microservices", "SEPay QR Payment", "Event-Driven Architecture"]
+      },
+      {
+        "title": "Zala — Real-time Messaging App",
+        "role": "Member",
+        "duration": "3 months",
+        "description": [
+          "Developed cross-platform mobile client using React Native + Expo with custom UI components.",
+          "Engineered low-latency concurrent messaging with WebSocket for real-time chat.",
+          "Implemented peer-to-peer video calling via WebRTC for direct media streaming.",
+          "Built secure authentication and user management with JWT tokens."
+        ],
+        "tags": ["React Native", "Expo", "WebSocket", "WebRTC", "Spring Boot", "MongoDB", "JWT"],
+        "github": "https://github.com/Hnit04/ZaLa_app",
+        "highlights": ["Real-time Messaging", "P2P Video Calling", "Cross-platform Mobile"]
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "My professional journey",
+    "items": [
+      {
+        "title": "Software Engineering Student",
+        "organization": "Industrial University of Ho Chi Minh City — IUH",
+        "period": "2022 — Present",
+        "description": "4th-year student majoring in Software Engineering, focusing on microservices architecture, backend systems, RESTful APIs, blockchain integration, and AI-powered applications.",
+        "highlights": ["Microservices Architecture", "Blockchain & Smart Contracts", "AI Integration (LangChain4j)"],
+        "type": "education"
+      },
+      {
+        "title": "Project Leader — SmartRental Platform",
+        "organization": "Capstone Project (KLTN)",
+        "period": "2025 — 2026",
+        "description": "Led a 3-member team to design and deploy a distributed rental management ecosystem integrating GenAI chatbot and blockchain-based lease contracts on Ethereum Sepolia.",
+        "highlights": ["Team Leadership", "System Architecture Design", "Full-stack Development"],
+        "type": "work"
+      },
+      {
+        "title": "Project Leader — E-Commerce Platform",
+        "organization": "Course Project",
+        "period": "2025",
+        "description": "Coordinated tasks and led a 3-member team to architect and deploy a microservices-based e-commerce platform with 7 independent services, real-time payment integration, and Docker orchestration.",
+        "highlights": ["Microservices Design", "Docker Compose", "CI/CD Pipeline"],
+        "type": "work"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Let's work together",
+    "description": "I'm currently looking for opportunities as a Java Backend Developer. Whether you have a question, an internship opportunity, or a collaboration project — feel free to reach out!",
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "message": "Your Message",
+      "send": "Send Message"
+    },
+    "info": {
+      "email": "Email",
+      "location": "Location",
+      "location_value": "Ho Chi Minh City, Vietnam"
+    }
+  },
+  "footer": {
+    "built_with": "Built with React + Vite",
+    "deployed_on": "Deployed on Vercel",
+    "copyright": "© 2025 Trần Công Tính. All rights reserved."
+  }
+}

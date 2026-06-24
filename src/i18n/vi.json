@@ -1,0 +1,147 @@
+{
+  "nav": {
+    "about": "Giới thiệu",
+    "tech": "Kỹ năng",
+    "projects": "Dự án",
+    "experience": "Kinh nghiệm",
+    "contact": "Liên hệ"
+  },
+  "hero": {
+    "greeting": "Xin chào, tôi là",
+    "name": "Trần Công Tính",
+    "roles": ["Java Backend Developer", "Microservices Architect", "Blockchain Integrator", "AI Enthusiast"],
+    "bio_paragraphs": [
+      "Tôi là một Lập trình viên Phần mềm chuyên thiết kế và xây dựng các hệ thống backend mạnh mẽ và kiến trúc microservices mở rộng.",
+      "Chuyên môn chính của tôi là hệ sinh thái Java/Spring Boot. Tôi thiết kế các API phân tán, triển khai kiến trúc hướng sự kiện với RabbitMQ, và xây dựng các nền tảng tích hợp AI & Blockchain.",
+      "Tôi phát triển tốt trong môi trường làm việc nhóm Agile, mang đến tư duy giải quyết vấn đề phức tạp và cam kết học hỏi không ngừng trong từng giai đoạn phát triển phần mềm."
+    ],
+    "cta_projects": "Xem Dự Án",
+    "cta_contact": "Liên Hệ Ngay",
+    "cta_cv": "Tải CV",
+    "experience_with": "CÔNG NGHỆ CHÍNH"
+  },
+  "about": {
+    "title": "Về Tôi",
+    "subtitle": "Tìm hiểu thêm về tôi",
+    "bio": "Tôi là một lập trình viên backend đam mê xây dựng các hệ thống mạnh mẽ và có khả năng mở rộng. Với kinh nghiệm thực tế về microservices, tích hợp blockchain và các tính năng AI, tôi thu hẹp khoảng cách giữa công nghệ tiên tiến và ứng dụng thực tế.",
+    "stats": {
+      "projects": "Dự án hoàn thành",
+      "services": "Microservices",
+      "contract_lines": "Dòng code Solidity",
+      "commits": "GitHub Commits"
+    }
+  },
+  "tech": {
+    "title": "Kỹ Năng Công Nghệ",
+    "subtitle": "Các công nghệ tôi sử dụng",
+    "categories": {
+      "backend": "Backend & Kiến trúc",
+      "database": "Cơ sở dữ liệu & Big Data",
+      "realtime": "Real-time & AI / Web3",
+      "infra": "Hạ tầng & DevOps",
+      "frontend": "Frontend"
+    }
+  },
+  "projects": {
+    "title": "Dự Án Tiêu Biểu",
+    "subtitle": "Những gì tôi đã xây dựng",
+    "view_code": "Mã Nguồn",
+    "live_demo": "Xem Demo",
+    "items": [
+      {
+        "title": "SmartRental — Nền tảng Cho thuê AI & Blockchain",
+        "role": "Leader",
+        "duration": "4 tháng",
+        "description": [
+          "Thiết kế và triển khai toàn bộ các tính năng backend cốt lõi để quản lý cho thuê nhà ở với Spring Boot & PostgreSQL.",
+          "Tích hợp AI chatbot sử dụng LangChain4j với API Gemini 2.5 Flash và in-memory vector store cho RAG.",
+          "Triển khai 595 dòng hợp đồng thông minh Solidity trên Ethereum Sepolia cho các hợp đồng thuê nhà bất biến với chữ ký EIP-712.",
+          "Triển khai phân quyền truy cập theo vai trò sử dụng xác thực JWT và Spring Security."
+        ],
+        "tags": ["Spring Boot", "LangChain4j", "Solidity", "React", "PostgreSQL", "Web3j", "JWT", "Docker"],
+        "github": "https://github.com/Hnit04/KLTN_SmartRental",
+        "highlights": ["Gemini AI RAG Chatbot", "Smart Contract 595 dòng", "Chữ ký EIP-712"]
+      },
+      {
+        "title": "Nền tảng E-Commerce Đồ Gia Dụng",
+        "role": "Leader",
+        "duration": "3 tháng",
+        "description": [
+          "Thiết kế kiến trúc 7 microservices độc lập — User, Product, Cart, Order, Payment, Promotion, Notification — mỗi service có cơ sở dữ liệu MongoDB riêng.",
+          "Triển khai kiến trúc hướng sự kiện (event-driven) thông qua RabbitMQ cho giao tiếp không đồng bộ giữa các services.",
+          "Tích hợp thanh toán mã QR SEPay với cập nhật trạng thái thời gian thực qua WebSocket.",
+          "Quản lý toàn bộ services với Spring Cloud Gateway và Docker Compose."
+        ],
+        "tags": ["Microservices", "Spring Cloud Gateway", "RabbitMQ", "MongoDB", "Docker", "React", "WebSocket", "SEPay"],
+        "github": "https://github.com/Hnit04/WebsiteBanDoGiaDung",
+        "demo": "https://tht-giadungthongminh.vercel.app/",
+        "highlights": ["7 Microservices", "Thanh toán QR SEPay", "Kiến trúc Hướng sự kiện"]
+      },
+      {
+        "title": "Zala — Ứng dụng Nhắn tin Thời gian thực",
+        "role": "Thành viên",
+        "duration": "3 tháng",
+        "description": [
+          "Phát triển ứng dụng di động đa nền tảng sử dụng React Native + Expo với các UI component tùy chỉnh.",
+          "Xây dựng hệ thống nhắn tin đồng thời độ trễ thấp với WebSocket cho chat thời gian thực.",
+          "Triển khai gọi video peer-to-peer qua WebRTC để truyền phát phương tiện trực tiếp.",
+          "Xây dựng hệ thống xác thực và quản lý người dùng bảo mật với JWT."
+        ],
+        "tags": ["React Native", "Expo", "WebSocket", "WebRTC", "Spring Boot", "MongoDB", "JWT"],
+        "github": "https://github.com/Hnit04/ZaLa_app",
+        "highlights": ["Nhắn tin Thời gian thực", "Gọi Video P2P", "Di động Đa nền tảng"]
+      }
+    ]
+  },
+  "experience": {
+    "title": "Kinh Nghiệm",
+    "subtitle": "Hành trình phát triển",
+    "items": [
+      {
+        "title": "Sinh viên Kỹ thuật Phần mềm",
+        "organization": "Đại học Công nghiệp TP.HCM — IUH",
+        "period": "2022 — Hiện tại",
+        "description": "Sinh viên năm 4 chuyên ngành Kỹ thuật Phần mềm, tập trung vào kiến trúc microservices, hệ thống backend, RESTful APIs, tích hợp blockchain và các ứng dụng tích hợp AI.",
+        "highlights": ["Kiến trúc Microservices", "Blockchain & Smart Contracts", "Tích hợp AI (LangChain4j)"],
+        "type": "education"
+      },
+      {
+        "title": "Trưởng nhóm — Dự án SmartRental",
+        "organization": "Đồ án Tốt nghiệp (KLTN)",
+        "period": "2025 — 2026",
+        "description": "Dẫn dắt nhóm 3 thành viên thiết kế và triển khai hệ sinh thái quản lý cho thuê nhà phân tán, tích hợp GenAI chatbot và hợp đồng thuê nhà dựa trên blockchain trên Ethereum Sepolia.",
+        "highlights": ["Lãnh đạo nhóm", "Thiết kế Kiến trúc Hệ thống", "Phát triển Full-stack"],
+        "type": "work"
+      },
+      {
+        "title": "Trưởng nhóm — Dự án E-Commerce",
+        "organization": "Đồ án Môn học",
+        "period": "2025",
+        "description": "Điều phối công việc và dẫn dắt nhóm 3 thành viên thiết kế và triển khai nền tảng e-commerce dựa trên microservices với 7 services độc lập, tích hợp thanh toán thời gian thực và quản lý bằng Docker.",
+        "highlights": ["Thiết kế Microservices", "Docker Compose", "CI/CD Pipeline"],
+        "type": "work"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Liên Hệ",
+    "subtitle": "Cùng hợp tác",
+    "description": "Tôi hiện đang tìm kiếm cơ hội với vai trò Java Backend Developer. Bất kể bạn có câu hỏi, cơ hội thực tập, hay dự án hợp tác — đừng ngần ngại liên hệ!",
+    "form": {
+      "name": "Tên của bạn",
+      "email": "Email của bạn",
+      "message": "Nội dung tin nhắn",
+      "send": "Gửi Tin Nhắn"
+    },
+    "info": {
+      "email": "Email",
+      "location": "Vị trí",
+      "location_value": "Thành phố Hồ Chí Minh, Việt Nam"
+    }
+  },
+  "footer": {
+    "built_with": "Xây dựng với React + Vite",
+    "deployed_on": "Triển khai trên Vercel",
+    "copyright": "© 2025 Trần Công Tính. Bảo lưu mọi quyền."
+  }
+}
