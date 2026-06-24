@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV — Trần Công Tính</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --primary: #1a1a2e;
+      --accent: #e67e22;
+      --text: #1a1a2e;
+      --text-light: #555;
+      --border: #ddd;
+      --bg: #ffffff;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      font-size: 10pt;
+      line-height: 1.5;
+      color: var(--text);
+      background: var(--bg);
+      max-width: 210mm;
+      margin: 0 auto;
+      padding: 12mm 16mm;
+    }
+
+    @media print {
+      body { padding: 10mm 14mm; }
+      .no-print { display: none; }
+    }
+
+    /* ===== HEADER ===== */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding-bottom: 10px;
+      border-bottom: 2.5px solid var(--accent);
+      margin-bottom: 14px;
+    }
+
+    .header__name {
+      font-size: 22pt;
+      font-weight: 700;
+      color: var(--primary);
+      letter-spacing: -0.5px;
+    }
+
+    .header__title {
+      font-size: 11pt;
+      font-weight: 500;
+      color: var(--accent);
+      margin-top: 2px;
+    }
+
+    .header__contact {
+      text-align: right;
+      font-size: 9pt;
+      color: var(--text-light);
+      line-height: 1.7;
+    }
+
+    .header__contact a {
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .header__contact a:hover {
+      color: var(--accent);
+    }
+
+    /* ===== SECTIONS ===== */
+    .section {
+      margin-bottom: 14px;
+    }
+
+    .section__title {
+      font-size: 11pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: var(--accent);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 3px;
+      margin-bottom: 8px;
+    }
+
+    /* ===== BIO ===== */
+    .bio {
+      font-size: 9.5pt;
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    /* ===== SKILLS ===== */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 3px 12px;
+      font-size: 9.5pt;
+    }
+
+    .skills-grid dt {
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    .skills-grid dd {
+      color: var(--text-light);
+    }
+
+    /* ===== PROJECT / EXPERIENCE ENTRY ===== */
+    .entry {
+      margin-bottom: 10px;
+    }
+
+    .entry__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .entry__title {
+      font-size: 10.5pt;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .entry__meta {
+      font-size: 9pt;
+      color: var(--text-light);
+      font-style: italic;
+    }
+
+    .entry__subtitle {
+      font-size: 9pt;
+      color: var(--accent);
+      font-weight: 500;
+      margin-bottom: 3px;
+    }
+
+    .entry__list {
+      padding-left: 16px;
+      font-size: 9.5pt;
+      color: var(--text-light);
+    }
+
+    .entry__list li {
+      margin-bottom: 2px;
+    }
+
+    .entry__list li::marker {
+      color: var(--accent);
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-top: 4px;
+    }
+
+    .tag {
+      font-size: 8pt;
+      padding: 1px 6px;
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      color: var(--text-light);
+      background: #f8f8f8;
+    }
+
+    /* ===== EDUCATION ===== */
+    .edu-entry {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .edu-entry__info {
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div>
+      <h1 class="header__name">TRẦN CÔNG TÍNH</h1>
+      <p class="header__title">Java Backend Developer</p>
+    </div>
+    <div class="header__contact">
+      <div>📧 <a href="mailto:trancongtinh20042004@gmail.com">trancongtinh20042004@gmail.com</a></div>
+      <div>📱 0xxx-xxx-xxx</div>
+      <div>📍 Ho Chi Minh City, Vietnam</div>
+      <div>🔗 <a href="https://github.com/Hnit04">github.com/Hnit04</a></div>
+      <div>🔗 <a href="https://linkedin.com/in/tinh-tran-484444408">LinkedIn</a></div>
+    </div>
+  </header>
+
+  <!-- ===== SUMMARY ===== -->
+  <section class="section">
+    <h2 class="section__title">Summary</h2>
+    <p class="bio">
+      Final-year Software Engineering student at IUH with hands-on experience building full-stack applications using Java/Spring Boot. 
+      Specializing in microservices architecture, event-driven systems, and integrating AI (LangChain4j + Gemini) and blockchain (Solidity + Ethereum) into real-world platforms. 
+      Seeking a Java Backend Developer internship/junior position.
+    </p>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section">
+    <h2 class="section__title">Technical Skills</h2>
+    <dl class="skills-grid">
+      <dt>Backend</dt>
+      <dd>Java 21, Spring Boot 3, Spring Security, Spring Cloud Gateway, REST API, JPA/Hibernate</dd>
+      <dt>Databases</dt>
+      <dd>PostgreSQL, MongoDB, MariaDB/MySQL</dd>
+      <dt>Messaging</dt>
+      <dd>RabbitMQ (event-driven), WebSocket (STOMP)</dd>
+      <dt>AI / Web3</dt>
+      <dd>LangChain4j, Gemini API, Solidity, Web3j, Hardhat, ethers.js</dd>
+      <dt>DevOps</dt>
+      <dd>Docker, Docker Compose, Git/GitHub, Linux (SSH)</dd>
+      <dt>Frontend</dt>
+      <dd>React, React Native (Expo), TypeScript, TailwindCSS</dd>
+      <dt>Others</dt>
+      <dd>JWT Auth, MapStruct, Jsoup, Cloudinary, Formspree</dd>
+    </dl>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section">
+    <h2 class="section__title">Projects</h2>
+
+    <!-- SmartRental -->
+    <div class="entry">
+      <div class="entry__header">
+        <span class="entry__title">SmartRental — AI & Blockchain Rental Platform</span>
+        <span class="entry__meta">Leader · 4 months · 2025–2026</span>
+      </div>
+      <p class="entry__subtitle">Capstone Thesis (KLTN) — 2-member team — <a href="https://github.com/Hnit04/KLTN_SmartRental">GitHub</a></p>
+      <ul class="entry__list">
+        <li>Designed and implemented all core backend features (REST API, Spring Security, JWT auth) with Spring Boot 3 + PostgreSQL.</li>
+        <li>Integrated AI chatbot using LangChain4j with Gemini 2.5 Flash API and in-memory vector store for RAG-based intelligent Q&A.</li>
+        <li>Deployed 595-line Solidity smart contract on Ethereum Sepolia for immutable lease agreements using EIP-712 typed signatures.</li>
+        <li>Built real-time push notifications via WebSocket (STOMP) for contract events, bills, and messages.</li>
+        <li>Implemented web crawling (Jsoup) to auto-import listings from external real estate sites.</li>
+      </ul>
+      <div class="tags">
+        <span class="tag">Spring Boot</span>
+        <span class="tag">PostgreSQL</span>
+        <span class="tag">LangChain4j</span>
+        <span class="tag">Gemini API</span>
+        <span class="tag">Solidity</span>
+        <span class="tag">Web3j</span>
+        <span class="tag">WebSocket</span>
+        <span class="tag">Docker</span>
+      </div>
+    </div>
+
+    <!-- E-Commerce -->
+    <div class="entry">
+      <div class="entry__header">
+        <span class="entry__title">Household Appliance E-Commerce — Microservices Platform</span>
+        <span class="entry__meta">Leader · 3 months · 2025</span>
+      </div>
+      <p class="entry__subtitle">Course Project — 3-member team — <a href="https://github.com/Hnit04/WebsiteBanDoGiaDung">GitHub</a> · <a href="https://tht-giadungthongminh.vercel.app/">Live Demo</a></p>
+      <ul class="entry__list">
+        <li>Architected 7 independent microservices (User, Product, Cart, Order, Payment, Promotion, Notification) — each with its own MongoDB database.</li>
+        <li>Implemented event-driven notifications via RabbitMQ for asynchronous cross-service communication.</li>
+        <li>Integrated SEPay QR code payment with real-time WebSocket status updates to the browser.</li>
+        <li>Set up API routing via Spring Cloud Gateway and containerized all services with Docker Compose.</li>
+      </ul>
+      <div class="tags">
+        <span class="tag">Microservices</span>
+        <span class="tag">Spring Cloud Gateway</span>
+        <span class="tag">RabbitMQ</span>
+        <span class="tag">MongoDB</span>
+        <span class="tag">Docker Compose</span>
+        <span class="tag">WebSocket</span>
+      </div>
+    </div>
+
+    <!-- Zala -->
+    <div class="entry">
+      <div class="entry__header">
+        <span class="entry__title">Zala — Real-time Messaging App</span>
+        <span class="entry__meta">Member · 3 months · 2025</span>
+      </div>
+      <p class="entry__subtitle">Course Project — <a href="https://github.com/Hnit04/ZaLa_app">GitHub</a></p>
+      <ul class="entry__list">
+        <li>Developed cross-platform mobile client using React Native + Expo with custom UI components.</li>
+        <li>Engineered real-time chat messaging with WebSocket and peer-to-peer video calling via WebRTC.</li>
+      </ul>
+      <div class="tags">
+        <span class="tag">React Native</span>
+        <span class="tag">Expo</span>
+        <span class="tag">WebSocket</span>
+        <span class="tag">WebRTC</span>
+        <span class="tag">Spring Boot</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section class="section">
+    <h2 class="section__title">Education</h2>
+    <div class="entry">
+      <div class="entry__header">
+        <span class="entry__title">B.Eng. in Software Engineering</span>
+        <span class="entry__meta">2022 — 2026 (Expected)</span>
+      </div>
+      <p class="entry__subtitle">Industrial University of Ho Chi Minh City (IUH)</p>
+    </div>
+  </section>
+
+  <!-- ===== LANGUAGES ===== -->
+  <section class="section">
+    <h2 class="section__title">Languages</h2>
+    <dl class="skills-grid">
+      <dt>Vietnamese</dt>
+      <dd>Native</dd>
+      <dt>English</dt>
+      <dd>Reading documentation, writing technical content</dd>
+    </dl>
+  </section>
+
+  <!-- ===== PRINT BUTTON ===== -->
+  <div class="no-print" style="text-align:center; margin-top:24px;">
+    <button onclick="window.print()" style="padding:10px 28px; font-size:12pt; background:#e67e22; color:#fff; border:none; border-radius:6px; cursor:pointer; font-family:inherit;">
+      🖨️ Print / Save as PDF
+    </button>
+  </div>
+
+</body>
+</html>
