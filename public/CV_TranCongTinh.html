@@ -5,184 +5,200 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV — Trần Công Tính</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
-    :root {
-      --primary: #1a1a2e;
-      --accent: #e67e22;
-      --text: #1a1a2e;
-      --text-light: #555;
-      --border: #ddd;
-      --bg: #ffffff;
-    }
-
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Inter', Arial, sans-serif;
       font-size: 10pt;
       line-height: 1.5;
-      color: var(--text);
-      background: var(--bg);
+      color: #1a1a1a;
+      background: #fff;
       max-width: 210mm;
       margin: 0 auto;
-      padding: 12mm 16mm;
+      padding: 10mm 16mm;
     }
 
     @media print {
-      body { padding: 10mm 14mm; }
-      .no-print { display: none; }
+      body { padding: 6mm 12mm; font-size: 9.5pt; }
+      .no-print { display: none !important; }
+      a { color: #1a1a1a !important; text-decoration: none !important; }
     }
+
+    a { color: #1a1a1a; text-decoration: none; }
 
     /* ===== HEADER ===== */
     .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      padding-bottom: 10px;
-      border-bottom: 2.5px solid var(--accent);
+      text-align: center;
+      padding-bottom: 12px;
       margin-bottom: 14px;
+      border-bottom: 2px solid #1a1a1a;
     }
 
     .header__name {
-      font-size: 22pt;
-      font-weight: 700;
-      color: var(--primary);
+      font-size: 26pt;
+      font-weight: 800;
       letter-spacing: -0.5px;
+      margin-bottom: 2px;
     }
 
     .header__title {
-      font-size: 11pt;
-      font-weight: 500;
-      color: var(--accent);
-      margin-top: 2px;
+      font-size: 12pt;
+      font-weight: 600;
+      margin-bottom: 8px;
     }
 
     .header__contact {
-      text-align: right;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 4px 16px;
       font-size: 9pt;
-      color: var(--text-light);
-      line-height: 1.7;
+      color: #333;
     }
 
-    .header__contact a {
-      color: var(--text);
-      text-decoration: none;
-    }
-
-    .header__contact a:hover {
-      color: var(--accent);
-    }
-
-    /* ===== SECTIONS ===== */
+    /* ===== SECTION ===== */
     .section {
-      margin-bottom: 14px;
+      margin-bottom: 10px;
     }
 
     .section__title {
       font-size: 11pt;
-      font-weight: 700;
+      font-weight: 800;
       text-transform: uppercase;
-      letter-spacing: 1.2px;
-      color: var(--accent);
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 3px;
-      margin-bottom: 8px;
+      letter-spacing: 0.5px;
+      padding-bottom: 2px;
+      border-bottom: 1.5px solid #1a1a1a;
+      margin-bottom: 6px;
     }
 
-    /* ===== BIO ===== */
-    .bio {
+    /* ===== SUMMARY ===== */
+    .summary {
       font-size: 9.5pt;
-      color: var(--text-light);
+      color: #333;
       line-height: 1.6;
     }
 
-    /* ===== SKILLS ===== */
-    .skills-grid {
-      display: grid;
-      grid-template-columns: 140px 1fr;
-      gap: 3px 12px;
+    /* ===== EDUCATION ROW ===== */
+    .edu-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .edu-school {
+      font-weight: 700;
+      font-size: 10pt;
+    }
+
+    .edu-date {
+      font-size: 9pt;
+      color: #333;
+    }
+
+    .edu-detail {
+      font-size: 9.5pt;
+      color: #333;
+      margin-top: 1px;
+    }
+
+    /* ===== SKILLS TABLE ===== */
+    .skills-table {
+      width: 100%;
+      border-collapse: collapse;
       font-size: 9.5pt;
     }
 
-    .skills-grid dt {
+    .skills-table td {
+      padding: 2px 0;
+      vertical-align: top;
+    }
+
+    .skills-table td:first-child {
       font-weight: 600;
-      color: var(--primary);
+      width: 170px;
+      white-space: nowrap;
+      padding-right: 12px;
     }
 
-    .skills-grid dd {
-      color: var(--text-light);
+    .skills-table td:last-child {
+      color: #333;
     }
 
-    /* ===== PROJECT / EXPERIENCE ENTRY ===== */
-    .entry {
+    /* ===== CERTIFICATES / AWARDS ===== */
+    .cert-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 9.5pt;
+    }
+
+    .cert-row span:last-child {
+      color: #555;
+      font-size: 9pt;
+    }
+
+    /* ===== PROJECT ===== */
+    .project {
       margin-bottom: 10px;
     }
 
-    .entry__header {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
+    .project:last-child {
+      margin-bottom: 0;
     }
 
-    .entry__title {
-      font-size: 10.5pt;
+    .project__header {
       font-weight: 700;
-      color: var(--primary);
+      font-size: 10pt;
     }
 
-    .entry__meta {
+    .project__desc {
       font-size: 9pt;
-      color: var(--text-light);
-      font-style: italic;
-    }
-
-    .entry__subtitle {
-      font-size: 9pt;
-      color: var(--accent);
-      font-weight: 500;
+      color: #333;
       margin-bottom: 3px;
     }
 
-    .entry__list {
-      padding-left: 16px;
+    .project__role {
       font-size: 9.5pt;
-      color: var(--text-light);
+      margin-bottom: 3px;
     }
 
-    .entry__list li {
-      margin-bottom: 2px;
+    .project__role strong {
+      font-weight: 700;
     }
 
-    .entry__list li::marker {
-      color: var(--accent);
+    .project__list {
+      padding-left: 16px;
+      font-size: 9pt;
+      color: #333;
+      margin-bottom: 3px;
     }
 
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 4px;
-      margin-top: 4px;
+    .project__list li {
+      margin-bottom: 1px;
     }
 
-    .tag {
-      font-size: 8pt;
-      padding: 1px 6px;
-      border: 1px solid var(--border);
-      border-radius: 3px;
-      color: var(--text-light);
-      background: #f8f8f8;
+    .project__tech {
+      font-size: 9pt;
+      color: #333;
+      margin-bottom: 1px;
     }
 
-    /* ===== EDUCATION ===== */
-    .edu-entry {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
+    .project__tech strong {
+      font-weight: 600;
     }
 
-    .edu-entry__info {
-      flex: 1;
+    .project__link {
+      font-size: 8.5pt;
+      color: #555;
+    }
+
+    /* ===== DIVIDER ===== */
+    hr.light {
+      border: none;
+      border-top: 1px dashed #ccc;
+      margin: 8px 0;
     }
   </style>
 </head>
@@ -190,48 +206,80 @@
 
   <!-- ===== HEADER ===== -->
   <header class="header">
-    <div>
-      <h1 class="header__name">TRẦN CÔNG TÍNH</h1>
-      <p class="header__title">Java Backend Developer</p>
-    </div>
+    <h1 class="header__name">Trần Công Tính</h1>
+    <p class="header__title">Java Backend Developer</p>
     <div class="header__contact">
-      <div>📧 <a href="mailto:trancongtinh20042004@gmail.com">trancongtinh20042004@gmail.com</a></div>
-      <div>📱 0xxx-xxx-xxx</div>
-      <div>📍 Ho Chi Minh City, Vietnam</div>
-      <div>🔗 <a href="https://github.com/Hnit04">github.com/Hnit04</a></div>
-      <div>🔗 <a href="https://linkedin.com/in/tinh-tran-484444408">LinkedIn</a></div>
+      <span>TP. Hồ Chí Minh</span>
+      <span>|</span>
+      <span>0326 829 327</span>
+      <span>|</span>
+      <span>trancongtinh20042004@gmail.com</span>
+      <span>|</span>
+      <span><a href="https://github.com/Hnit04">github.com/Hnit04</a></span>
+      <span>|</span>
+      <span><a href="https://linkedin.com/in/tinh-tran-484444408">LinkedIn</a></span>
     </div>
   </header>
 
   <!-- ===== SUMMARY ===== -->
   <section class="section">
     <h2 class="section__title">Summary</h2>
-    <p class="bio">
-      Final-year Software Engineering student at IUH with hands-on experience building full-stack applications using Java/Spring Boot. 
-      Specializing in microservices architecture, event-driven systems, and integrating AI (LangChain4j + Gemini) and blockchain (Solidity + Ethereum) into real-world platforms. 
-      Seeking a Java Backend Developer internship/junior position.
+    <p class="summary">
+      Final-year Software Engineering student with hands-on experience building backend systems using Java, Spring Boot, PostgreSQL, MongoDB, RabbitMQ, and Docker.
     </p>
+    <p class="summary" style="margin-top:4px;">
+      Seeking a Java Backend internship to contribute to backend development, API design, and distributed systems while strengthening software engineering skills.
+    </p>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section class="section">
+    <h2 class="section__title">Education</h2>
+    <div class="edu-row">
+      <span class="edu-school">Industrial University of Ho Chi Minh City (IUH)</span>
+      <span class="edu-date">2022 — 2026 (Expected)</span>
+    </div>
+    <p class="edu-detail">Major: Software Engineering</p>
+    <p class="edu-detail">GPA: 3.3 / 4.0</p>
   </section>
 
   <!-- ===== SKILLS ===== -->
   <section class="section">
-    <h2 class="section__title">Technical Skills</h2>
-    <dl class="skills-grid">
-      <dt>Backend</dt>
-      <dd>Java 21, Spring Boot 3, Spring Security, Spring Cloud Gateway, REST API, JPA/Hibernate</dd>
-      <dt>Databases</dt>
-      <dd>PostgreSQL, MongoDB, MariaDB/MySQL</dd>
-      <dt>Messaging</dt>
-      <dd>RabbitMQ (event-driven), WebSocket (STOMP)</dd>
-      <dt>AI / Web3</dt>
-      <dd>LangChain4j, Gemini API, Solidity, Web3j, Hardhat, ethers.js</dd>
-      <dt>DevOps</dt>
-      <dd>Docker, Docker Compose, Git/GitHub, Linux (SSH)</dd>
-      <dt>Frontend</dt>
-      <dd>React, React Native (Expo), TypeScript, TailwindCSS</dd>
-      <dt>Others</dt>
-      <dd>JWT Auth, MapStruct, Jsoup, Cloudinary, Formspree</dd>
-    </dl>
+    <h2 class="section__title">Skills</h2>
+    <table class="skills-table">
+      <tr>
+        <td>Java</td>
+        <td>Java Core (OOP, Collections, Stream API, Exception Handling, Multithreading)</td>
+      </tr>
+      <tr>
+        <td>Spring Framework</td>
+        <td>Spring Boot, Spring Security, Spring Data JPA, Spring Cloud Gateway, REST APIs, JWT, WebSocket</td>
+      </tr>
+      <tr>
+        <td>Database</td>
+        <td>PostgreSQL, MongoDB, MariaDB/MySQL</td>
+      </tr>
+      <tr>
+        <td>Messaging & Real-time</td>
+        <td>RabbitMQ, WebSocket (STOMP/SockJS), WebRTC</td>
+      </tr>
+      <tr>
+        <td>AI / Blockchain</td>
+        <td>LangChain4j, Gemini API, Solidity, Web3j, Hardhat, ethers.js</td>
+      </tr>
+      <tr>
+        <td>Tools</td>
+        <td>Git/GitHub, Docker, Docker Compose, Maven, Gradle, Postman, IntelliJ IDEA</td>
+      </tr>
+      <tr>
+        <td>Frontend</td>
+        <td>React, React Native (Expo), TypeScript, TailwindCSS</td>
+      </tr>
+      <tr>
+        <td>Soft Skills</td>
+        <td>Problem Solving, Self-learning, Team Leadership, Agile/Scrum</td>
+      </tr>
+    </table>
   </section>
 
   <!-- ===== PROJECTS ===== -->
@@ -239,103 +287,64 @@
     <h2 class="section__title">Projects</h2>
 
     <!-- SmartRental -->
-    <div class="entry">
-      <div class="entry__header">
-        <span class="entry__title">SmartRental — AI & Blockchain Rental Platform</span>
-        <span class="entry__meta">Leader · 4 months · 2025–2026</span>
-      </div>
-      <p class="entry__subtitle">Capstone Thesis (KLTN) — 2-member team — <a href="https://github.com/Hnit04/KLTN_SmartRental">GitHub</a></p>
-      <ul class="entry__list">
-        <li>Designed and implemented all core backend features (REST API, Spring Security, JWT auth) with Spring Boot 3 + PostgreSQL.</li>
-        <li>Integrated AI chatbot using LangChain4j with Gemini 2.5 Flash API and in-memory vector store for RAG-based intelligent Q&A.</li>
-        <li>Deployed 595-line Solidity smart contract on Ethereum Sepolia for immutable lease agreements using EIP-712 typed signatures.</li>
-        <li>Built real-time push notifications via WebSocket (STOMP) for contract events, bills, and messages.</li>
-        <li>Implemented web crawling (Jsoup) to auto-import listings from external real estate sites.</li>
+    <div class="project">
+      <p class="project__header">SmartRental — AI & Blockchain Rental Management Platform (Capstone Thesis)</p>
+      <p class="project__desc"><strong>Description:</strong> A full-stack rental management platform integrating AI chatbot for intelligent Q&A and blockchain smart contracts for immutable lease agreements on Ethereum Sepolia.</p>
+      <p class="project__role"><strong>Role: Full Stack Developer (Leader)</strong></p>
+      <ul class="project__list">
+        <li>Designed and implemented all core backend REST APIs for residential rental management using Spring Boot 3 + PostgreSQL.</li>
+        <li>Integrated AI chatbot using LangChain4j with Gemini 2.5 Flash API and in-memory embedding store for RAG-based Q&A.</li>
+        <li>Deployed 595-line Solidity smart contract on Ethereum Sepolia for immutable lease agreements with EIP-712 typed signatures.</li>
+        <li>Built real-time push notifications via WebSocket (STOMP) for contract events, billing alerts, and in-app messages.</li>
+        <li>Implemented web crawling with Jsoup to auto-import listings from external real estate websites.</li>
+        <li>Integrated Google OAuth2, Cloudinary CDN for image hosting, Leaflet map, and Pannellum 360° virtual tours.</li>
       </ul>
-      <div class="tags">
-        <span class="tag">Spring Boot</span>
-        <span class="tag">PostgreSQL</span>
-        <span class="tag">LangChain4j</span>
-        <span class="tag">Gemini API</span>
-        <span class="tag">Solidity</span>
-        <span class="tag">Web3j</span>
-        <span class="tag">WebSocket</span>
-        <span class="tag">Docker</span>
-      </div>
+      <p class="project__tech"><strong>Technologies:</strong> Java 21, Spring Boot 3, Spring Security, PostgreSQL, LangChain4j, Gemini API, Solidity, Web3j, Hardhat, WebSocket, Docker, React, TypeScript</p>
+      <p class="project__link"><strong>Link github:</strong> <a href="https://github.com/Hnit04/KLTN_SmartRental">https://github.com/Hnit04/KLTN_SmartRental</a></p>
     </div>
+
+    <hr class="light">
 
     <!-- E-Commerce -->
-    <div class="entry">
-      <div class="entry__header">
-        <span class="entry__title">Household Appliance E-Commerce — Microservices Platform</span>
-        <span class="entry__meta">Leader · 3 months · 2025</span>
-      </div>
-      <p class="entry__subtitle">Course Project — 3-member team — <a href="https://github.com/Hnit04/WebsiteBanDoGiaDung">GitHub</a> · <a href="https://tht-giadungthongminh.vercel.app/">Live Demo</a></p>
-      <ul class="entry__list">
+    <div class="project">
+      <p class="project__header">Household Appliance E-Commerce — Microservices Platform (Course Project)</p>
+      <p class="project__desc"><strong>Description:</strong> Microservices-based e-commerce platform supporting product management, ordering, payments, promotions, and event-driven notifications for customers and administrators.</p>
+      <p class="project__role"><strong>Role: Backend Developer (Leader)</strong></p>
+      <ul class="project__list">
         <li>Architected 7 independent microservices (User, Product, Cart, Order, Payment, Promotion, Notification) — each with its own MongoDB database.</li>
         <li>Implemented event-driven notifications via RabbitMQ for asynchronous cross-service communication.</li>
-        <li>Integrated SEPay QR code payment with real-time WebSocket status updates to the browser.</li>
-        <li>Set up API routing via Spring Cloud Gateway and containerized all services with Docker Compose.</li>
+        <li>Integrated SEPay QR code payment with real-time WebSocket status updates pushed to browser.</li>
+        <li>Set up API routing and CORS via Spring Cloud Gateway; containerized all services with Docker Compose.</li>
+        <li>Deployed backend on Render (7 services) and frontend on Vercel.</li>
       </ul>
-      <div class="tags">
-        <span class="tag">Microservices</span>
-        <span class="tag">Spring Cloud Gateway</span>
-        <span class="tag">RabbitMQ</span>
-        <span class="tag">MongoDB</span>
-        <span class="tag">Docker Compose</span>
-        <span class="tag">WebSocket</span>
-      </div>
+      <p class="project__tech"><strong>Technologies:</strong> Java 21, Spring Boot 3, Spring Cloud Gateway, RabbitMQ, MongoDB, Docker, Docker Compose, React, WebSocket</p>
+      <p class="project__link"><strong>Link github:</strong> <a href="https://github.com/Hnit04/WebsiteBanDoGiaDung">https://github.com/Hnit04/WebsiteBanDoGiaDung</a></p>
+      <p class="project__link"><strong>Live demo:</strong> <a href="https://tht-giadungthongminh.vercel.app/">https://tht-giadungthongminh.vercel.app/</a></p>
     </div>
+
+    <hr class="light">
 
     <!-- Zala -->
-    <div class="entry">
-      <div class="entry__header">
-        <span class="entry__title">Zala — Real-time Messaging App</span>
-        <span class="entry__meta">Member · 3 months · 2025</span>
-      </div>
-      <p class="entry__subtitle">Course Project — <a href="https://github.com/Hnit04/ZaLa_app">GitHub</a></p>
-      <ul class="entry__list">
+    <div class="project">
+      <p class="project__header">Zala — Real-time Messaging Mobile Application (Course Project)</p>
+      <p class="project__desc"><strong>Description:</strong> Cross-platform mobile messaging application supporting real-time chat, peer-to-peer video calling, and user management.</p>
+      <p class="project__role"><strong>Role: Mobile Developer (Member)</strong></p>
+      <ul class="project__list">
         <li>Developed cross-platform mobile client using React Native + Expo with custom UI components.</li>
         <li>Engineered real-time chat messaging with WebSocket and peer-to-peer video calling via WebRTC.</li>
+        <li>Built secure user authentication and session management with JWT tokens.</li>
       </ul>
-      <div class="tags">
-        <span class="tag">React Native</span>
-        <span class="tag">Expo</span>
-        <span class="tag">WebSocket</span>
-        <span class="tag">WebRTC</span>
-        <span class="tag">Spring Boot</span>
-      </div>
+      <p class="project__tech"><strong>Technologies:</strong> React Native, Expo, WebSocket, WebRTC, Spring Boot, MongoDB, JWT</p>
+      <p class="project__link"><strong>Link github:</strong> <a href="https://github.com/Hnit04/ZaLa_app">https://github.com/Hnit04/ZaLa_app</a></p>
     </div>
-  </section>
-
-  <!-- ===== EDUCATION ===== -->
-  <section class="section">
-    <h2 class="section__title">Education</h2>
-    <div class="entry">
-      <div class="entry__header">
-        <span class="entry__title">B.Eng. in Software Engineering</span>
-        <span class="entry__meta">2022 — 2026 (Expected)</span>
-      </div>
-      <p class="entry__subtitle">Industrial University of Ho Chi Minh City (IUH)</p>
-    </div>
-  </section>
-
-  <!-- ===== LANGUAGES ===== -->
-  <section class="section">
-    <h2 class="section__title">Languages</h2>
-    <dl class="skills-grid">
-      <dt>Vietnamese</dt>
-      <dd>Native</dd>
-      <dt>English</dt>
-      <dd>Reading documentation, writing technical content</dd>
-    </dl>
   </section>
 
   <!-- ===== PRINT BUTTON ===== -->
-  <div class="no-print" style="text-align:center; margin-top:24px;">
-    <button onclick="window.print()" style="padding:10px 28px; font-size:12pt; background:#e67e22; color:#fff; border:none; border-radius:6px; cursor:pointer; font-family:inherit;">
+  <div class="no-print" style="text-align:center; margin-top:24px; padding: 16px;">
+    <button onclick="window.print()" style="padding:12px 32px; font-size:11pt; background:#1a1a1a; color:#fff; border:none; border-radius:6px; cursor:pointer; font-family:inherit; font-weight:600;">
       🖨️ Print / Save as PDF
     </button>
+    <p style="margin-top:8px; font-size:8.5pt; color:#888;">Use "Save as PDF" in the print dialog. Set margins to "None" or "Minimum".</p>
   </div>
 
 </body>
