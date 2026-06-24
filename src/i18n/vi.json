@@ -88,7 +88,7 @@
           "Xây dựng hệ thống xác thực và quản lý người dùng bảo mật với JWT."
         ],
         "tags": ["React Native", "Expo", "WebSocket", "WebRTC", "Spring Boot", "MongoDB", "JWT"],
-        "github": "https://github.com/Hnit04/ZaLa_app",
+        "github": "https://github.com/IUH-CNM-TEAM08",
         "highlights": ["Nhắn tin Thời gian thực", "Gọi Video P2P", "Di động Đa nền tảng"]
       }
     ]

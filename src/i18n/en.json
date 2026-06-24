@@ -78,17 +78,17 @@
         "highlights": ["7 Microservices", "SEPay QR Payment", "Event-Driven Architecture"]
       },
       {
-        "title": "Zala — Real-time Messaging App",
-        "role": "Member",
+        "title": "Zala — Real-time Messaging Mobile Application",
+        "role": "Mobile Developer",
         "duration": "3 months",
         "description": [
-          "Developed cross-platform mobile client using React Native + Expo with custom UI components.",
+          "Cross-platform mobile messaging application supporting real-time chat, peer-to-peer video calling, and user management.",
           "Engineered low-latency concurrent messaging with WebSocket for real-time chat.",
           "Implemented peer-to-peer video calling via WebRTC for direct media streaming.",
           "Built secure authentication and user management with JWT tokens."
         ],
         "tags": ["React Native", "Expo", "WebSocket", "WebRTC", "Spring Boot", "MongoDB", "JWT"],
-        "github": "https://github.com/Hnit04/ZaLa_app",
+        "github": "https://github.com/IUH-CNM-TEAM08",
         "highlights": ["Real-time Messaging", "P2P Video Calling", "Cross-platform Mobile"]
       }
     ]
