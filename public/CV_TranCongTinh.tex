@@ -1,0 +1,199 @@
+%-------------------------
+% Resume in LaTeX — Jake's Resume Template
+% Based on: https://github.com/sb2nov/resume
+% License: MIT
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate PDF is machine readable / ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Tran Cong Tinh} \\ \vspace{1pt}
+    \textbf{\large Java Backend Developer} \\ \vspace{4pt}
+    \small
+    \faIcon{map-marker-alt} Ho Chi Minh City, Vietnam $|$
+    \faIcon{phone} \href{tel:+84326829327}{0326 829 327} $|$
+    \faIcon{envelope} \href{mailto:trancongtinh20042004@gmail.com}{trancongtinh20042004@gmail.com} \\
+    \faIcon{github} \href{https://github.com/Hnit04}{github.com/Hnit04} $|$
+    \faIcon{linkedin} \href{https://linkedin.com/in/tinh-tran-484444408}{LinkedIn} $|$
+    \faIcon{globe} \href{https://hnit04.github.io/portfolio}{Portfolio}
+\end{center}
+
+
+%-----------PROFESSIONAL SUMMARY-----------
+\section{Professional Summary}
+  \small{
+    Java Backend Developer specializing in Spring Boot, RESTful APIs, Microservices, and Distributed Systems.
+    Experienced in building scalable backend applications using Java, PostgreSQL, MongoDB, RabbitMQ, and Docker through academic and capstone projects.
+    Seeking a Backend Developer Internship/Fresher position to contribute to high-quality software products while growing expertise in enterprise backend development.
+  }
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Industrial University of Ho Chi Minh City (IUH)}{Expected Graduation: Jun 2026}
+      {Bachelor of Software Engineering}{GPA: 3.3 / 4.0}
+  \resumeSubHeadingListEnd
+  \vspace{-8pt}
+  \small{\textbf{Relevant Coursework:} Data Structures \& Algorithms, Object-Oriented Programming, Database Systems, Software Architecture, Distributed Systems.}
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, SQL, TypeScript, JavaScript} \\
+     \textbf{Backend \& APIs}{: Spring Boot, Spring Security, Spring Data JPA, REST API, Microservices, Spring Cloud Gateway} \\
+     \textbf{Databases}{: PostgreSQL, MongoDB, MySQL, MariaDB} \\
+     \textbf{Messaging \& Architecture}{: RabbitMQ, Event-Driven Architecture, WebSocket} \\
+     \textbf{AI \& Blockchain}{: LangChain4j, Gemini API, RAG, Solidity, Web3j, Hardhat, EIP-712 Typed Signatures} \\
+     \textbf{DevOps \& Tools}{: Docker, Docker Compose, Git/GitHub, Maven, Gradle, Postman, IntelliJ IDEA} \\
+     \textbf{Frontend}{: React, React Native, TailwindCSS}
+    }}
+ \end{itemize}
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{SmartRental -- AI \& Blockchain Rental Management Platform} $|$ \emph{Full Stack Developer (Team Leader)}}{Capstone Thesis}
+          \small{\href{https://github.com/Hnit04/KLTN_SmartRental}{github.com/Hnit04/KLTN\_SmartRental}}
+          \resumeItemListStart
+            \resumeItem{Built AI-powered RAG chatbot using \textbf{LangChain4j + Gemini API}.}
+            \resumeItem{Designed and deployed a \textbf{595-line Solidity smart contract} on Ethereum Sepolia with \textbf{EIP-712} signature workflow.}
+            \resumeItem{Developed real-time notification system using \textbf{WebSocket (STOMP)} with sub-second message delivery.}
+            \resumeItem{Developed \textbf{30+ RESTful APIs} serving tenant, landlord, billing, and contract management modules.}
+            \resumeItem{Built automated property data collection using \textbf{Jsoup} web crawling.}
+          \resumeItemListEnd
+          \vspace{-4pt}
+          \small{\textbf{Technologies:} Java 21, Spring Boot 3, PostgreSQL, LangChain4j, Gemini API, Solidity, Web3j, Docker, WebSocket, React}
+
+      \resumeProjectHeading
+          {\textbf{Household Appliance E-Commerce Platform} $|$ \emph{Backend Developer (Team Leader)}}{Course Project}
+          \small{\href{https://github.com/Hnit04/WebsiteBanDoGiaDung}{github.com/Hnit04/WebsiteBanDoGiaDung} $|$ Live: \href{https://tht-giadungthongminh.vercel.app/}{tht-giadungthongminh.vercel.app}}
+          \resumeItemListStart
+            \resumeItem{Built \textbf{7 independent microservices} communicating asynchronously through \textbf{RabbitMQ}.}
+            \resumeItem{Implemented service isolation with dedicated \textbf{MongoDB} databases.}
+            \resumeItem{Integrated SEPay QR payment gateway with real-time status updates via WebSocket.}
+            \resumeItem{Configured API Gateway using \textbf{Spring Cloud Gateway} and containerized the system using \textbf{Docker Compose}.}
+          \resumeItemListEnd
+          \vspace{-4pt}
+          \small{\textbf{Technologies:} Java 21, Spring Boot 3, Spring Cloud Gateway, RabbitMQ, MongoDB, Docker, Docker Compose, WebSocket}
+
+      \resumeProjectHeading
+          {\textbf{Zala -- Real-time Messaging Mobile Application}}{Course Project}
+          \small{\href{https://github.com/IUH-CNM-TEAM08}{github.com/IUH-CNM-TEAM08}}
+          \resumeItemListStart
+            \resumeItem{Developed real-time messaging using \textbf{WebSocket}.}
+            \resumeItem{Implemented peer-to-peer video calls with \textbf{WebRTC}.}
+            \resumeItem{Integrated \textbf{JWT authentication}.}
+          \resumeItemListEnd
+          \vspace{-4pt}
+          \small{\textbf{Technologies:} Spring Boot, MongoDB, WebSocket, WebRTC, React Native}
+
+    \resumeSubHeadingListEnd
+
+
+%-----------ADDITIONAL INFORMATION-----------
+\section{Additional Information}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Vietnamese}{: Native} \\
+     \textbf{English}{: Intermediate (Reading Technical Documentation)}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
