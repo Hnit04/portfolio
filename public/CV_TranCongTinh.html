@@ -104,13 +104,6 @@
       font-size: 8.5pt;
       color: #333;
     }
-    
-    .coursework {
-      font-size: 8.5pt;
-      color: #444;
-      margin-top: 1px;
-    }
-    .coursework strong { color: #333; font-weight: 600; }
 
     /* ===== SKILLS TABLE ===== */
     .skills-table {
@@ -193,18 +186,6 @@
     .project__tech strong {
       font-weight: 600;
     }
-    
-    /* ===== LANGUAGES ===== */
-    .lang-row {
-      font-size: 8.5pt;
-      color: #333;
-      margin-bottom: 1px;
-    }
-    .lang-row strong {
-      font-weight: 600;
-      display: inline-block;
-      width: 80px;
-    }
 
   </style>
 </head>
@@ -213,7 +194,7 @@
   <!-- ===== HEADER ===== -->
   <header class="header">
     <h1 class="header__name">Trần Công Tính</h1>
-    <p class="header__title">Java Backend Developer</p>
+    <p class="header__title">Full Stack Developer</p>
     <div class="header__contact">
       <span>📍 Ho Chi Minh City, Vietnam</span>
       <span>|</span>
@@ -231,10 +212,8 @@
 
   <!-- ===== SUMMARY ===== -->
   <section class="section">
-    <h2 class="section__title">Professional Summary</h2>
-    <p class="summary">Java Backend Developer specializing in Spring Boot, RESTful APIs, Microservices, and Distributed Systems.</p>
-    <p class="summary">Experienced in building scalable backend applications using Java, PostgreSQL, MongoDB, RabbitMQ, and Docker through academic and capstone projects.</p>
-    <p class="summary">Seeking a Backend Developer Internship/Fresher position to contribute to high-quality software products while growing expertise in enterprise backend development.</p>
+    <h2 class="section__title">Summary</h2>
+    <p class="summary">Built and deployed scalable full-stack applications across 3 major projects. Strong foundation in backend development (Java/Spring Boot, Node.js) and modern architectures including microservices, event-driven systems, and real-time communication. Experienced in deploying containerized solutions on cloud infrastructure. English: technical reading and workplace communication. Seeking an Intern/Fresher Full Stack Developer position.</p>
   </section>
 
   <!-- ===== EDUCATION ===== -->
@@ -242,13 +221,12 @@
     <h2 class="section__title">Education</h2>
     <div class="edu-row">
       <span class="edu-school">Industrial University of Ho Chi Minh City (IUH)</span>
-      <span class="edu-date">Expected Graduation: Jun 2026</span>
+      <span class="edu-date">Expected Jun 2026</span>
     </div>
     <div class="edu-row">
-      <span class="edu-detail">Bachelor of Software Engineering</span>
+      <span class="edu-detail">B.E. Software Engineering</span>
       <span class="edu-detail" style="font-weight: 600;">GPA: 3.3 / 4.0</span>
     </div>
-    <p class="coursework"><strong>Relevant Coursework:</strong> Data Structures & Algorithms, Object-Oriented Programming, Database Systems, Software Architecture, Distributed Systems.</p>
   </section>
 
   <!-- ===== TECHNICAL SKILLS ===== -->
@@ -256,32 +234,32 @@
     <h2 class="section__title">Technical Skills</h2>
     <table class="skills-table">
       <tr>
-        <td>Languages</td>
-        <td>Java, SQL, TypeScript, JavaScript</td>
-      </tr>
-      <tr>
-        <td>Backend & APIs</td>
-        <td>Spring Boot, Spring Security, Spring Data JPA, REST API, Microservices, Spring Cloud Gateway</td>
+        <td>Backend</td>
+        <td>Java, Spring Boot, Spring Security, Spring Data JPA, Spring Cloud Gateway, Node.js, Express, REST API, JWT</td>
       </tr>
       <tr>
         <td>Databases</td>
-        <td>PostgreSQL, MongoDB, MySQL, MariaDB</td>
+        <td>PostgreSQL, MongoDB, MariaDB, Redis</td>
       </tr>
       <tr>
-        <td>Messaging & Architecture</td>
-        <td>RabbitMQ, Event-Driven Architecture, WebSocket</td>
+        <td>Real-time & Messaging</td>
+        <td>Socket.IO, WebSocket (STOMP), RabbitMQ, Apache Kafka</td>
       </tr>
       <tr>
-        <td>AI & Blockchain</td>
-        <td>LangChain4j, Gemini API, RAG, Solidity, Web3j, Hardhat, EIP-712 Typed Signatures</td>
+        <td>Architecture</td>
+        <td>Microservices, API Gateway, Circuit Breaker (Resilience4j), Event-Driven</td>
       </tr>
       <tr>
-        <td>DevOps & Tools</td>
-        <td>Docker, Docker Compose, Git/GitHub, Maven, Gradle, Postman, IntelliJ IDEA</td>
+        <td>DevOps</td>
+        <td>Docker, Docker Compose, Nginx, Jenkins CI/CD, AWS S3, Render, Vercel, DigitalOcean</td>
+      </tr>
+      <tr>
+        <td>AI/Blockchain</td>
+        <td>Gemini API, Groq API, FPT AI OCR, Web3j, Ethers.js, Solidity</td>
       </tr>
       <tr>
         <td>Frontend</td>
-        <td>React, React Native, TailwindCSS</td>
+        <td>React, React Native, Expo, TypeScript, TailwindCSS</td>
       </tr>
     </table>
   </section>
@@ -293,72 +271,70 @@
     <!-- SmartRental -->
     <div class="project">
       <div class="project__header">
-        <span class="project__name">SmartRental – AI & Blockchain Rental Management Platform</span>
-        <span class="edu-date">Capstone Thesis</span>
+        <span class="project__name">SmartRental – AI & Blockchain Rental Platform</span>
+        <span class="edu-date">2025</span>
       </div>
-      <p class="project__role">Full Stack Developer (Team Leader)</p>
-      <p class="project__links"><a href="https://github.com/Hnit04/KLTN_SmartRental">github.com/Hnit04/KLTN_SmartRental</a></p>
-      <p class="project__desc"><strong>Overview:</strong> A rental management platform combining AI-powered customer support and Ethereum-based smart contracts for transparent lease agreements.</p>
-      <p class="project__desc"><strong>Key Achievements:</strong></p>
+      <p class="project__role">Full Stack Developer (Team Leader) -- <a href="https://github.com/Hnit04/KLTN_SmartRental">GitHub</a></p>
       <ul class="project__list">
-        <li>Built AI-powered RAG chatbot using <strong>LangChain4j + Gemini API</strong>.</li>
-        <li>Designed and deployed a <strong>595-line Solidity smart contract</strong> on Ethereum Sepolia with <strong>EIP-712</strong> signature workflow.</li>
-        <li>Developed real-time notification system using <strong>WebSocket (STOMP)</strong> with sub-second message delivery.</li>
-        <li>Developed <strong>30+ RESTful APIs</strong> serving tenant, landlord, billing, and contract management modules.</li>
-        <li>Built automated property data collection using <strong>Jsoup</strong> web crawling.</li>
+        <li>Designed backend architecture using <strong>Spring Boot 3</strong> and <strong>PostgreSQL</strong>, developing <strong>30+ RESTful APIs</strong> for tenant, landlord, billing, and contract management.</li>
+        <li>Built AI-powered <strong>RAG chatbot</strong> using <strong>LangChain4j + Gemini API</strong> for automated customer support with context-aware responses.</li>
+        <li>Developed real-time notification system using <strong>WebSocket (STOMP)</strong> with sub-second delivery across multiple user roles.</li>
+        <li>Deployed backend to <strong>AWS EC2</strong> with Docker; integrated <strong>Google OAuth2</strong>, <strong>Cloudinary</strong> CDN, and <strong>Jsoup</strong> web crawling.</li>
+        <li>Deployed <strong>Solidity smart contract</strong> on Ethereum Sepolia with <strong>EIP-712</strong> typed signature workflow.</li>
       </ul>
-      <p class="project__tech"><strong>Technologies:</strong> Java 21, Spring Boot 3, PostgreSQL, LangChain4j, Gemini API, Solidity, Web3j, Docker, WebSocket, React</p>
+      <p class="project__tech"><strong>Tech:</strong> Java 21, Spring Boot 3, Spring Security, PostgreSQL, LangChain4j, Solidity, Docker, AWS EC2, WebSocket, React</p>
     </div>
 
     <!-- E-Commerce -->
     <div class="project">
       <div class="project__header">
-        <span class="project__name">Household Appliance E-Commerce Platform</span>
-        <span class="edu-date">Course Project</span>
+        <span class="project__name">Household Appliance E-Commerce</span>
+        <span class="edu-date">2024</span>
       </div>
-      <p class="project__role">Backend Developer (Team Leader)</p>
-      <p class="project__links"><a href="https://github.com/Hnit04/WebsiteBanDoGiaDung">github.com/Hnit04/WebsiteBanDoGiaDung</a> | Live: <a href="https://tht-giadungthongminh.vercel.app/">tht-giadungthongminh.vercel.app</a></p>
-      <p class="project__desc"><strong>Overview:</strong> A microservices-based e-commerce platform supporting order processing, payments, promotions, and real-time notifications.</p>
-      <p class="project__desc"><strong>Key Achievements:</strong></p>
+      <p class="project__role">Full Stack Developer (Team Leader) -- <a href="https://github.com/Hnit04/WebsiteBanDoGiaDung">GitHub</a> -- <a href="https://tht-giadungthongminh.vercel.app/">Live Demo</a></p>
       <ul class="project__list">
-        <li>Built <strong>7 independent microservices</strong> communicating asynchronously through <strong>RabbitMQ</strong>.</li>
-        <li>Implemented service isolation with dedicated <strong>MongoDB</strong> databases.</li>
-        <li>Integrated SEPay QR payment gateway with real-time status updates via WebSocket.</li>
-        <li>Configured API Gateway using <strong>Spring Cloud Gateway</strong> and containerized the system using <strong>Docker Compose</strong>.</li>
+        <li>Designed <strong>microservices architecture</strong> with <strong>9 services</strong> (7 business, API Gateway, Eureka) and isolated <strong>MongoDB</strong> per service.</li>
+        <li>Configured <strong>Spring Cloud Gateway</strong> with <strong>Resilience4j Circuit Breaker</strong> for fault-tolerant routing and custom <strong>JWT filters</strong>.</li>
+        <li>Implemented inter-service communication using <strong>OpenFeign</strong> (sync) and <strong>RabbitMQ</strong> (async); added <strong>Global Exception Handling</strong>.</li>
+        <li>Integrated SEPay QR payment gateway with real-time transaction status updates via <strong>WebSocket (STOMP)</strong>.</li>
+        <li>Containerized <strong>11 containers</strong> using <strong>Docker Compose</strong>; deployed backend on <strong>Render</strong> and frontend on <strong>Vercel</strong>.</li>
       </ul>
-      <p class="project__tech"><strong>Technologies:</strong> Java 21, Spring Boot 3, Spring Cloud Gateway, RabbitMQ, MongoDB, Docker, Docker Compose, WebSocket</p>
+      <p class="project__tech"><strong>Tech:</strong> Java 21, Spring Boot 3, Spring Cloud Gateway, Eureka, OpenFeign, Resilience4j, RabbitMQ, MongoDB, WebSocket, Docker</p>
     </div>
 
     <!-- Zala -->
     <div class="project">
       <div class="project__header">
-        <span class="project__name">Zala – Real-time Messaging Mobile Application</span>
-        <span class="edu-date">Course Project</span>
+        <span class="project__name">Zala – Real-time Messaging Platform</span>
+        <span class="edu-date">2024</span>
       </div>
-      <p class="project__links"><a href="https://github.com/IUH-CNM-TEAM08">github.com/IUH-CNM-TEAM08</a></p>
-      <p class="project__desc"><strong>Overview:</strong> Cross-platform messaging application supporting instant messaging and peer-to-peer video calls.</p>
+      <p class="project__role">Full Stack Developer -- <a href="https://github.com/IUH-CNM-TEAM08">GitHub</a></p>
       <ul class="project__list">
-        <li>Developed real-time messaging using <strong>WebSocket</strong>.</li>
-        <li>Implemented peer-to-peer video calls with <strong>WebRTC</strong>.</li>
-        <li>Integrated <strong>JWT authentication</strong>.</li>
+        <li>Built <strong>Node.js/Express/TypeScript</strong> backend with <strong>Socket.IO</strong> real-time engine handling chat, group management, voting, presence tracking, and live streaming events.</li>
+        <li>Integrated <strong>Redis</strong> for caching/session management and <strong>Apache Kafka</strong> for event streaming.</li>
+        <li>Implemented <strong>WebRTC signaling</strong> + <strong>LiveKit</strong> for peer-to-peer video/audio calls and <strong>Gemini/Groq AI</strong> chatbot.</li>
+        <li>Containerized <strong>6 services</strong> (App, MongoDB, Redis, Kafka, Nginx, Jenkins) with <strong>Docker Compose</strong>; deployed on <strong>DigitalOcean</strong>.</li>
+        <li>Developed cross-platform mobile app using <strong>React Native + Expo</strong> with <strong>AWS S3</strong> file storage.</li>
       </ul>
-      <p class="project__tech"><strong>Technologies:</strong> Spring Boot, MongoDB, WebSocket, WebRTC, React Native</p>
+      <p class="project__tech"><strong>Tech:</strong> Node.js, Express, TypeScript, Socket.IO, Redis, Kafka, MongoDB, LiveKit, Docker, Jenkins, React Native</p>
     </div>
   </section>
   
-  <!-- ===== LANGUAGES & ADDITIONAL INFO ===== -->
-  <section class="section">
-    <h2 class="section__title">Additional Information</h2>
-    <div class="lang-row"><strong>Vietnamese:</strong> Native</div>
-    <div class="lang-row"><strong>English:</strong> Intermediate (Reading Technical Documentation)</div>
-  </section>
-
   <!-- ===== PRINT BUTTON ===== -->
   <div class="no-print" style="text-align:center; margin-top:12px; padding: 10px;">
     <button onclick="window.print()" style="padding:8px 20px; font-size:9pt; background:#1a1a1a; color:#fff; border:none; border-radius:4px; cursor:pointer; font-weight:600;">
       🖨️ Print / Save as PDF
     </button>
   </div>
+
+  <!-- Print CSS specific adjustments for margins if needed -->
+  <style>
+    @media print {
+      @page {
+        margin: 5mm; /* Remove browser default headers and footers */
+      }
+    }
+  </style>
 
 </body>
 </html>
