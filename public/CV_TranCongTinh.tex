@@ -1,17 +1,17 @@
 %-------------------------
 % Resume in LaTeX - Jake's Resume Template
 % Based on: https://github.com/sb2nov/resume
-% License: MIT
 %-------------------------
 
 \documentclass[letterpaper,11pt]{article}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage{carlito}
+\renewcommand{\familydefault}{\sfdefault}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
-\usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
@@ -19,17 +19,15 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
-\usepackage{fontawesome5}
 \input{glyphtounicode}
 
-%----------FONT OPTIONS----------
+%----------PAGE SETUP----------
 \pagestyle{fancy}
 \fancyhf{}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
@@ -37,25 +35,22 @@
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
-
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% Ensure that generate PDF is machine readable / ATS parsable
+% ATS parsable
 \pdfgentounicode=1
 
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
+  \item\small{#1 \vspace{-2pt}}
 }
 
 \newcommand{\resumeSubheading}[4]{
@@ -66,22 +61,6 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
@@ -90,112 +69,97 @@
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 \begin{document}
 
 %----------HEADING----------
 \begin{center}
-    \textbf{\Huge \scshape Tran Cong Tinh} \\ \vspace{1pt}
-    \textbf{\large Java Backend Developer} \\ \vspace{4pt}
+    {\fontsize{24pt}{28pt}\selectfont\textbf{TRAN CONG TINH}} \\ \vspace{4pt}
+    {\fontsize{12pt}{14pt}\selectfont Full Stack Developer} \\ \vspace{6pt}
     \small
-    \faIcon{map-marker-alt} Ho Chi Minh City, Vietnam $|$
-    \faIcon{phone} \href{tel:+84326829327}{0326 829 327} $|$
-    \faIcon{envelope} \href{mailto:trancongtinh20042004@gmail.com}{trancongtinh20042004@gmail.com} \\
-    \faIcon{github} \href{https://github.com/Hnit04}{github.com/Hnit04} $|$
-    \faIcon{linkedin} \href{https://linkedin.com/in/tinh-tran-484444408}{LinkedIn} $|$
-    \faIcon{globe} \href{https://hnit04.github.io/portfolio}{Portfolio}
+    Ho Chi Minh City \enspace$\cdot$\enspace
+    \href{tel:+84326829327}{0326 829 327} \enspace$\cdot$\enspace
+    \href{mailto:trancongtinh20042004@gmail.com}{trancongtinh20042004@gmail.com} \\[2pt]
+    GitHub: \href{https://github.com/Hnit04}{github.com/Hnit04} \enspace$\cdot$\enspace
+    LinkedIn: \href{https://linkedin.com/in/tinh-tran-484444408}{linkedin.com/in/tinh-tran} \enspace$\cdot$\enspace
+    Portfolio: \href{https://hnit04.github.io/portfolio}{hnit04.github.io/portfolio}
 \end{center}
 
-
-%-----------PROFESSIONAL SUMMARY-----------
-\section{Professional Summary}
+%-----------SUMMARY-----------
+\section{Summary}
   \small{
-    Java Backend Developer specializing in Spring Boot, RESTful APIs, Microservices, and Distributed Systems.
-    Experienced in building scalable backend applications using Java, PostgreSQL, MongoDB, RabbitMQ, and Docker through academic and capstone projects.
-    Seeking a Backend Developer Internship/Fresher position to contribute to high-quality software products while growing expertise in enterprise backend development.
+    Built and deployed scalable full-stack applications across 3 major projects. Strong foundation in backend development (Java/Spring Boot, Node.js) and modern architectures including microservices, event-driven systems, and real-time communication. Experienced in deploying containerized solutions on cloud infrastructure. English: technical reading and workplace communication. Seeking an Intern/Fresher Full Stack Developer position.
   }
-
 
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Industrial University of Ho Chi Minh City (IUH)}{Expected Graduation: Jun 2026}
-      {Bachelor of Software Engineering}{GPA: 3.3 / 4.0}
+      {Industrial University of Ho Chi Minh City (IUH)}{Expected Jun 2026}
+      {B.E. Software Engineering}{GPA: 3.3 / 4.0}
   \resumeSubHeadingListEnd
-  \vspace{-8pt}
-  \small{\textbf{Relevant Coursework:} Data Structures \& Algorithms, Object-Oriented Programming, Database Systems, Software Architecture, Distributed Systems.}
-
 
 %-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Java, SQL, TypeScript, JavaScript} \\
-     \textbf{Backend \& APIs}{: Spring Boot, Spring Security, Spring Data JPA, REST API, Microservices, Spring Cloud Gateway} \\
-     \textbf{Databases}{: PostgreSQL, MongoDB, MySQL, MariaDB} \\
-     \textbf{Messaging \& Architecture}{: RabbitMQ, Event-Driven Architecture, WebSocket} \\
-     \textbf{AI \& Blockchain}{: LangChain4j, Gemini API, RAG, Solidity, Web3j, Hardhat, EIP-712 Typed Signatures} \\
-     \textbf{DevOps \& Tools}{: Docker, Docker Compose, Git/GitHub, Maven, Gradle, Postman, IntelliJ IDEA} \\
-     \textbf{Frontend}{: React, React Native, TailwindCSS}
+     \textbf{Backend}{: Java, Spring Boot, Spring Security, Spring Data JPA, Spring Cloud Gateway, Node.js, Express, REST API, JWT} \\
+     \textbf{Databases}{: PostgreSQL, MongoDB, MariaDB, Redis} \\
+     \textbf{Real-time \& Messaging}{: Socket.IO, WebSocket (STOMP), RabbitMQ, Apache Kafka} \\
+     \textbf{Architecture}{: Microservices, API Gateway, Circuit Breaker (Resilience4j), Event-Driven} \\
+     \textbf{DevOps}{: Docker, Docker Compose, Nginx, Jenkins CI/CD, AWS S3, Render, Vercel, DigitalOcean} \\
+     \textbf{AI/Blockchain}{: Gemini API, Groq API, FPT AI OCR, Web3j, Ethers.js, Solidity} \\
+     \textbf{Frontend}{: React, React Native, Expo, TypeScript, TailwindCSS}
     }}
  \end{itemize}
-
 
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
 
-      \resumeProjectHeading
-          {\textbf{SmartRental -- AI \& Blockchain Rental Management Platform} $|$ \emph{Full Stack Developer (Team Leader)}}{Capstone Thesis}
-          \small{\href{https://github.com/Hnit04/KLTN_SmartRental}{github.com/Hnit04/KLTN\_SmartRental}}
+      %--- SmartRental (~45%) ---
+      \resumeSubheading
+        {SmartRental -- AI \& Blockchain Rental Platform}{Capstone Thesis}
+        {Full Stack Developer (Team Leader) -- \href{https://github.com/Hnit04/KLTN\_SmartRental}{GitHub}}{2025}
           \resumeItemListStart
-            \resumeItem{Built AI-powered RAG chatbot using \textbf{LangChain4j + Gemini API}.}
-            \resumeItem{Designed and deployed a \textbf{595-line Solidity smart contract} on Ethereum Sepolia with \textbf{EIP-712} signature workflow.}
-            \resumeItem{Developed real-time notification system using \textbf{WebSocket (STOMP)} with sub-second message delivery.}
-            \resumeItem{Developed \textbf{30+ RESTful APIs} serving tenant, landlord, billing, and contract management modules.}
-            \resumeItem{Built automated property data collection using \textbf{Jsoup} web crawling.}
+            \resumeItem{Designed backend architecture using \textbf{Spring Boot 3} and \textbf{PostgreSQL}, developing \textbf{30+ RESTful APIs} for tenant, landlord, billing, and contract management.}
+            \resumeItem{Built AI-powered \textbf{RAG chatbot} using \textbf{LangChain4j + Gemini API} for automated customer support with context-aware responses.}
+            \resumeItem{Developed real-time notification system using \textbf{WebSocket (STOMP)} with sub-second delivery across multiple user roles.}
+            \resumeItem{Deployed backend to \textbf{AWS EC2} with Docker; integrated \textbf{Google OAuth2}, \textbf{Cloudinary} CDN, and \textbf{Jsoup} web crawling.}
+            \resumeItem{Deployed \textbf{Solidity smart contract} on Ethereum Sepolia with \textbf{EIP-712} typed signature workflow.}
           \resumeItemListEnd
-          \vspace{-4pt}
-          \small{\textbf{Technologies:} Java 21, Spring Boot 3, PostgreSQL, LangChain4j, Gemini API, Solidity, Web3j, Docker, WebSocket, React}
+          \small{\textbf{Tech:} Java 21, Spring Boot 3, Spring Security, PostgreSQL, LangChain4j, Solidity, Docker, AWS EC2, WebSocket, React}
 
-      \resumeProjectHeading
-          {\textbf{Household Appliance E-Commerce Platform} $|$ \emph{Backend Developer (Team Leader)}}{Course Project}
-          \small{\href{https://github.com/Hnit04/WebsiteBanDoGiaDung}{github.com/Hnit04/WebsiteBanDoGiaDung} $|$ Live: \href{https://tht-giadungthongminh.vercel.app/}{tht-giadungthongminh.vercel.app}}
-          \resumeItemListStart
-            \resumeItem{Built \textbf{7 independent microservices} communicating asynchronously through \textbf{RabbitMQ}.}
-            \resumeItem{Implemented service isolation with dedicated \textbf{MongoDB} databases.}
-            \resumeItem{Integrated SEPay QR payment gateway with real-time status updates via WebSocket.}
-            \resumeItem{Configured API Gateway using \textbf{Spring Cloud Gateway} and containerized the system using \textbf{Docker Compose}.}
-          \resumeItemListEnd
-          \vspace{-4pt}
-          \small{\textbf{Technologies:} Java 21, Spring Boot 3, Spring Cloud Gateway, RabbitMQ, MongoDB, Docker, Docker Compose, WebSocket}
+      \vspace{2pt}
 
-      \resumeProjectHeading
-          {\textbf{Zala -- Real-time Messaging Mobile Application}}{Course Project}
-          \small{\href{https://github.com/IUH-CNM-TEAM08}{github.com/IUH-CNM-TEAM08}}
+      %--- E-Commerce (~35%) ---
+      \resumeSubheading
+        {Household Appliance E-Commerce}{Course Project}
+        {Full Stack Developer (Team Leader) -- \href{https://github.com/Hnit04/WebsiteBanDoGiaDung}{GitHub} -- \href{https://tht-giadungthongminh.vercel.app/}{Live Demo}}{2024}
           \resumeItemListStart
-            \resumeItem{Developed real-time messaging using \textbf{WebSocket}.}
-            \resumeItem{Implemented peer-to-peer video calls with \textbf{WebRTC}.}
-            \resumeItem{Integrated \textbf{JWT authentication}.}
+            \resumeItem{Designed \textbf{microservices architecture} with \textbf{9 services} (7 business, API Gateway, Eureka) and isolated \textbf{MongoDB} per service.}
+            \resumeItem{Configured \textbf{Spring Cloud Gateway} with \textbf{Resilience4j Circuit Breaker} for fault-tolerant routing and custom \textbf{JWT filters}.}
+            \resumeItem{Implemented inter-service communication using \textbf{OpenFeign} (sync) and \textbf{RabbitMQ} (async); added \textbf{Global Exception Handling}.}
+            \resumeItem{Integrated SEPay QR payment gateway with real-time transaction status updates via \textbf{WebSocket (STOMP)}.}
+            \resumeItem{Containerized \textbf{11 containers} using \textbf{Docker Compose}; deployed backend on \textbf{Render} and frontend on \textbf{Vercel}.}
           \resumeItemListEnd
-          \vspace{-4pt}
-          \small{\textbf{Technologies:} Spring Boot, MongoDB, WebSocket, WebRTC, React Native}
+          \small{\textbf{Tech:} Java 21, Spring Boot 3, Spring Cloud Gateway, Eureka, OpenFeign, Resilience4j, RabbitMQ, MongoDB, WebSocket, Docker}
+
+      \vspace{2pt}
+
+      %--- Zala (~30%) ---
+      \resumeSubheading
+        {Zala -- Real-time Messaging Platform}{Course Project}
+        {Full Stack Developer -- \href{https://github.com/IUH-CNM-TEAM08}{GitHub}}{2024}
+          \resumeItemListStart
+            \resumeItem{Built \textbf{Node.js/Express/TypeScript} backend with \textbf{Socket.IO} real-time engine handling chat, group management, voting, presence tracking, and live streaming events.}
+            \resumeItem{Integrated \textbf{Redis} for caching/session management and \textbf{Apache Kafka} for event streaming.}
+            \resumeItem{Implemented \textbf{WebRTC signaling} + \textbf{LiveKit} for peer-to-peer video/audio calls and \textbf{Gemini/Groq AI} chatbot.}
+            \resumeItem{Containerized \textbf{6 services} (App, MongoDB, Redis, Kafka, Nginx, Jenkins) with \textbf{Docker Compose}; deployed on \textbf{DigitalOcean}.}
+            \resumeItem{Developed cross-platform mobile app using \textbf{React Native + Expo} with \textbf{AWS S3} file storage.}
+          \resumeItemListEnd
+          \small{\textbf{Tech:} Node.js, Express, TypeScript, Socket.IO, Redis, Kafka, MongoDB, LiveKit, Docker, Jenkins, React Native}
 
     \resumeSubHeadingListEnd
-
-
-%-----------ADDITIONAL INFORMATION-----------
-\section{Additional Information}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Vietnamese}{: Native} \\
-     \textbf{English}{: Intermediate (Reading Technical Documentation)}
-    }}
- \end{itemize}
-
 
 %-------------------------------------------
 \end{document}

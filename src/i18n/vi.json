@@ -12,7 +12,7 @@
     "roles": ["Java Backend Developer", "Microservices Architect", "Blockchain Integrator", "AI Enthusiast"],
     "bio_paragraphs": [
       "Tôi là một Lập trình viên Phần mềm chuyên thiết kế và xây dựng các hệ thống backend mạnh mẽ và kiến trúc microservices mở rộng.",
-      "Chuyên môn chính của tôi là hệ sinh thái Java/Spring Boot. Tôi thiết kế các API phân tán, triển khai kiến trúc hướng sự kiện với RabbitMQ, và xây dựng các nền tảng tích hợp AI & Blockchain.",
+      "Chuyên môn chính của tôi là hệ sinh thái Java/Spring Boot và Node.js/Express. Tôi thiết kế các API phân tán, triển khai kiến trúc hướng sự kiện với RabbitMQ/Kafka, và xây dựng các nền tảng tích hợp AI & Blockchain.",
       "Tôi phát triển tốt trong môi trường làm việc nhóm Agile, mang đến tư duy giải quyết vấn đề phức tạp và cam kết học hỏi không ngừng trong từng giai đoạn phát triển phần mềm."
     ],
     "cta_projects": "Xem Dự Án",
@@ -67,29 +67,31 @@
         "role": "Leader",
         "duration": "3 tháng",
         "description": [
-          "Thiết kế kiến trúc 7 microservices độc lập — User, Product, Cart, Order, Payment, Promotion, Notification — mỗi service có cơ sở dữ liệu MongoDB riêng.",
-          "Triển khai kiến trúc hướng sự kiện (event-driven) thông qua RabbitMQ cho giao tiếp không đồng bộ giữa các services.",
-          "Tích hợp thanh toán mã QR SEPay với cập nhật trạng thái thời gian thực qua WebSocket.",
-          "Quản lý toàn bộ services với Spring Cloud Gateway và Docker Compose."
+          "Thiết kế kiến trúc 9 microservices (7 business, API Gateway, Eureka) — mỗi service có cơ sở dữ liệu MongoDB riêng.",
+          "Cấu hình Spring Cloud Gateway với Resilience4j Circuit Breaker và custom JWT filter để định tuyến API an toàn.",
+          "Giao tiếp nội bộ qua OpenFeign (đồng bộ) và RabbitMQ (bất đồng bộ); quản lý lỗi bằng Global Exception Handling.",
+          "Tích hợp thanh toán mã QR SEPay với cập nhật trạng thái thời gian thực qua WebSocket (STOMP).",
+          "Quản lý toàn bộ 11 containers với Docker Compose; deploy backend lên Render."
         ],
-        "tags": ["Microservices", "Spring Cloud Gateway", "RabbitMQ", "MongoDB", "Docker", "React", "WebSocket", "SEPay"],
+        "tags": ["Microservices", "Spring Cloud Gateway", "Eureka", "OpenFeign", "Resilience4j", "RabbitMQ", "MongoDB", "Docker"],
         "github": "https://github.com/Hnit04/WebsiteBanDoGiaDung",
         "demo": "https://tht-giadungthongminh.vercel.app/",
-        "highlights": ["7 Microservices", "Thanh toán QR SEPay", "Kiến trúc Hướng sự kiện"]
+        "highlights": ["9 Microservices", "Service Discovery (Eureka)", "OpenFeign & RabbitMQ"]
       },
       {
-        "title": "Zala — Ứng dụng Nhắn tin Thời gian thực",
-        "role": "Thành viên",
+        "title": "Zala — Nền tảng Nhắn tin Thời gian thực",
+        "role": "Full Stack Developer",
         "duration": "3 tháng",
         "description": [
-          "Phát triển ứng dụng di động đa nền tảng sử dụng React Native + Expo với các UI component tùy chỉnh.",
-          "Xây dựng hệ thống nhắn tin đồng thời độ trễ thấp với WebSocket cho chat thời gian thực.",
-          "Triển khai gọi video peer-to-peer qua WebRTC để truyền phát phương tiện trực tiếp.",
-          "Xây dựng hệ thống xác thực và quản lý người dùng bảo mật với JWT."
+          "Xây dựng backend Node.js/Express/TypeScript với engine Socket.IO (xử lý chat, nhắn tin nhóm, bình chọn, và livestream).",
+          "Tích hợp Redis cho quản lý session/caching và Apache Kafka cho event streaming.",
+          "Triển khai gọi video peer-to-peer qua WebRTC + LiveKit và hệ thống chatbot AI kép (Gemini & Groq).",
+          "Quản lý 6 services bằng Docker Compose + Jenkins CI/CD và deploy lên DigitalOcean.",
+          "Phát triển ứng dụng di động đa nền tảng sử dụng React Native + Expo với lưu trữ AWS S3."
         ],
-        "tags": ["React Native", "Expo", "WebSocket", "WebRTC", "Spring Boot", "MongoDB", "JWT"],
+        "tags": ["Node.js", "Express", "Socket.IO", "Redis", "Kafka", "MongoDB", "LiveKit", "Jenkins", "React Native"],
         "github": "https://github.com/IUH-CNM-TEAM08",
-        "highlights": ["Nhắn tin Thời gian thực", "Gọi Video P2P", "Di động Đa nền tảng"]
+        "highlights": ["Socket.IO & WebRTC", "Redis & Kafka", "CI/CD Deployment"]
       }
     ]
   },
@@ -126,7 +128,7 @@
   "contact": {
     "title": "Liên Hệ",
     "subtitle": "Cùng hợp tác",
-    "description": "Tôi hiện đang tìm kiếm cơ hội với vai trò Java Backend Developer. Bất kể bạn có câu hỏi, cơ hội thực tập, hay dự án hợp tác — đừng ngần ngại liên hệ!",
+    "description": "Tôi hiện đang tìm kiếm cơ hội với vai trò Full Stack Developer. Bất kể bạn có câu hỏi, cơ hội thực tập, hay dự án hợp tác — đừng ngần ngại liên hệ!",
     "form": {
       "name": "Tên của bạn",
       "email": "Email của bạn",

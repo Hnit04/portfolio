@@ -12,7 +12,7 @@
     "roles": ["Java Backend Developer", "Microservices Architect", "Blockchain Integrator", "AI Enthusiast"],
     "bio_paragraphs": [
       "I am a Software Developer dedicated to engineering resilient backend systems and scalable microservices architectures.",
-      "Specializing in the Java/Spring Boot ecosystem, I design distributed APIs, implement event-driven architectures with RabbitMQ, and build AI-enhanced & blockchain-integrated platforms.",
+      "Specializing in the Java/Spring Boot and Node.js/Express ecosystems, I design distributed APIs, implement event-driven architectures with RabbitMQ/Kafka, and build AI-enhanced & blockchain-integrated platforms.",
       "I thrive in collaborative agile environments, bringing a complex problem-solving mindset and a commitment to continuous learning to every phase of the software development lifecycle."
     ],
     "cta_projects": "View Projects",
@@ -67,29 +67,31 @@
         "role": "Leader",
         "duration": "3 months",
         "description": [
-          "Architected 7 independent microservices — User, Product, Cart, Order, Payment, Promotion, Notification — each with its own MongoDB database.",
-          "Implemented event-driven notifications via RabbitMQ for asynchronous messaging between services.",
-          "Integrated SEPay QR code payment with real-time WebSocket status updates.",
-          "Orchestrated all services with Spring Cloud Gateway and Docker Compose."
+          "Architected 9 microservices (7 business, API Gateway, Eureka) — each with its own MongoDB database.",
+          "Configured Spring Cloud Gateway with Resilience4j Circuit Breaker and custom JWT filters for fault-tolerant routing.",
+          "Implemented inter-service communication using OpenFeign (sync) and RabbitMQ (async), alongside Global Exception Handling.",
+          "Integrated SEPay QR code payment with real-time WebSocket (STOMP) status updates.",
+          "Orchestrated 11 containers with Docker Compose and deployed backend on Render."
         ],
-        "tags": ["Microservices", "Spring Cloud Gateway", "RabbitMQ", "MongoDB", "Docker", "React", "WebSocket", "SEPay"],
+        "tags": ["Microservices", "Spring Cloud Gateway", "Eureka", "OpenFeign", "Resilience4j", "RabbitMQ", "MongoDB", "Docker"],
         "github": "https://github.com/Hnit04/WebsiteBanDoGiaDung",
         "demo": "https://tht-giadungthongminh.vercel.app/",
-        "highlights": ["7 Microservices", "SEPay QR Payment", "Event-Driven Architecture"]
+        "highlights": ["9 Microservices", "Service Discovery (Eureka)", "OpenFeign & RabbitMQ"]
       },
       {
-        "title": "Zala — Real-time Messaging Mobile Application",
-        "role": "Mobile Developer",
+        "title": "Zala — Real-time Messaging Platform",
+        "role": "Full Stack Developer",
         "duration": "3 months",
         "description": [
-          "Cross-platform mobile messaging application supporting real-time chat, peer-to-peer video calling, and user management.",
-          "Engineered low-latency concurrent messaging with WebSocket for real-time chat.",
-          "Implemented peer-to-peer video calling via WebRTC for direct media streaming.",
-          "Built secure authentication and user management with JWT tokens."
+          "Built Node.js/Express/TypeScript backend with Socket.IO engine handling chat, group messaging, voting, and live streaming.",
+          "Integrated Redis for session/caching and Apache Kafka for event streaming.",
+          "Implemented peer-to-peer video calling via WebRTC + LiveKit and dual AI chatbot system (Gemini & Groq).",
+          "Managed 6 services using Docker Compose + Jenkins CI/CD and deployed on DigitalOcean.",
+          "Developed cross-platform mobile application using React Native + Expo with AWS S3 storage."
         ],
-        "tags": ["React Native", "Expo", "WebSocket", "WebRTC", "Spring Boot", "MongoDB", "JWT"],
+        "tags": ["Node.js", "Express", "Socket.IO", "Redis", "Kafka", "MongoDB", "LiveKit", "Jenkins", "React Native"],
         "github": "https://github.com/IUH-CNM-TEAM08",
-        "highlights": ["Real-time Messaging", "P2P Video Calling", "Cross-platform Mobile"]
+        "highlights": ["Socket.IO & WebRTC", "Redis & Kafka", "CI/CD Deployment"]
       }
     ]
   },
@@ -126,7 +128,7 @@
   "contact": {
     "title": "Get In Touch",
     "subtitle": "Let's work together",
-    "description": "I'm currently looking for opportunities as a Java Backend Developer. Whether you have a question, an internship opportunity, or a collaboration project — feel free to reach out!",
+    "description": "I'm currently looking for opportunities as a Full Stack Developer. Whether you have a question, an internship opportunity, or a collaboration project — feel free to reach out!",
     "form": {
       "name": "Your Name",
       "email": "Your Email",
