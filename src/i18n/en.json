@@ -53,8 +53,8 @@
         "role": "Leader",
         "duration": "4 months",
         "description": [
-          "Designed and implemented all core backend features for residential rental management with Spring Boot & PostgreSQL.",
-          "Integrated AI-powered chatbot using LangChain4j with Gemini 2.5 Flash API and in-memory vector store for RAG.",
+          "Designed a modular backend architecture of 6 business modules. Implemented 20 REST controllers, 33 services, and 160+ RESTful APIs with Spring Boot & PostgreSQL + PgVector.",
+          "Built a Retrieval-Augmented Generation (RAG) pipeline using LangChain4j and Gemini API for context-aware chatbot.",
           "Deployed 595-line Solidity smart contracts on Ethereum Sepolia for immutable lease agreements with EIP-712 signatures.",
           "Implemented role-based access control using JWT authentication and Spring Security."
         ],
@@ -71,7 +71,7 @@
           "Configured Spring Cloud Gateway with Resilience4j Circuit Breaker and custom JWT filters for fault-tolerant routing.",
           "Implemented inter-service communication using OpenFeign (sync) and RabbitMQ (async), alongside Global Exception Handling.",
           "Integrated SEPay QR code payment with real-time WebSocket (STOMP) status updates.",
-          "Orchestrated 11 containers with Docker Compose and deployed backend on Render."
+          "Containerized the complete microservices environment running 11 service containers using Docker Compose."
         ],
         "tags": ["Microservices", "Spring Cloud Gateway", "Eureka", "OpenFeign", "Resilience4j", "RabbitMQ", "MongoDB", "Docker"],
         "github": "https://github.com/Hnit04/WebsiteBanDoGiaDung",
@@ -80,10 +80,11 @@
       },
       {
         "title": "Zala — Real-time Messaging Platform",
-        "role": "Full Stack Developer",
+        "role": "Java Backend Developer",
         "duration": "3 months",
         "description": [
-          "Built Node.js/Express/TypeScript backend with Socket.IO engine handling chat, group messaging, voting, and live streaming.",
+          "Built Node.js/Express/TypeScript backend with 10 controllers and 22 service modules.",
+          "Implemented real-time messaging supporting chat, group management, presence tracking, and live streaming using Socket.IO.",
           "Integrated Redis for session/caching and Apache Kafka for event streaming.",
           "Implemented peer-to-peer video calling via WebRTC + LiveKit and dual AI chatbot system (Gemini & Groq).",
           "Managed 6 services using Docker Compose + Jenkins CI/CD and deployed on DigitalOcean.",
@@ -128,7 +129,7 @@
   "contact": {
     "title": "Get In Touch",
     "subtitle": "Let's work together",
-    "description": "I'm currently looking for opportunities as a Full Stack Developer. Whether you have a question, an internship opportunity, or a collaboration project — feel free to reach out!",
+    "description": "I'm currently looking for opportunities as a Java Backend Developer Intern/Fresher. Whether you have a question, an internship opportunity, or a collaboration project — feel free to reach out!",
     "form": {
       "name": "Your Name",
       "email": "Your Email",

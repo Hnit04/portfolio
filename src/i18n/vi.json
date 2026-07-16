@@ -53,8 +53,8 @@
         "role": "Leader",
         "duration": "4 tháng",
         "description": [
-          "Thiết kế và triển khai toàn bộ các tính năng backend cốt lõi để quản lý cho thuê nhà ở với Spring Boot & PostgreSQL.",
-          "Tích hợp AI chatbot sử dụng LangChain4j với API Gemini 2.5 Flash và in-memory vector store cho RAG.",
+          "Thiết kế kiến trúc modular với 6 module nghiệp vụ. Triển khai 20 REST controllers, 33 services và 160+ RESTful APIs với Spring Boot & PostgreSQL + PgVector.",
+          "Xây dựng pipeline RAG (Retrieval-Augmented Generation) với LangChain4j và API Gemini để tạo chatbot thông minh.",
           "Triển khai 595 dòng hợp đồng thông minh Solidity trên Ethereum Sepolia cho các hợp đồng thuê nhà bất biến với chữ ký EIP-712.",
           "Triển khai phân quyền truy cập theo vai trò sử dụng xác thực JWT và Spring Security."
         ],
@@ -71,7 +71,7 @@
           "Cấu hình Spring Cloud Gateway với Resilience4j Circuit Breaker và custom JWT filter để định tuyến API an toàn.",
           "Giao tiếp nội bộ qua OpenFeign (đồng bộ) và RabbitMQ (bất đồng bộ); quản lý lỗi bằng Global Exception Handling.",
           "Tích hợp thanh toán mã QR SEPay với cập nhật trạng thái thời gian thực qua WebSocket (STOMP).",
-          "Quản lý toàn bộ 11 containers với Docker Compose; deploy backend lên Render."
+          "Containerized toàn bộ môi trường microservices chạy 11 service containers bằng Docker Compose; deploy backend lên Render."
         ],
         "tags": ["Microservices", "Spring Cloud Gateway", "Eureka", "OpenFeign", "Resilience4j", "RabbitMQ", "MongoDB", "Docker"],
         "github": "https://github.com/Hnit04/WebsiteBanDoGiaDung",
@@ -80,10 +80,11 @@
       },
       {
         "title": "Zala — Nền tảng Nhắn tin Thời gian thực",
-        "role": "Full Stack Developer",
+        "role": "Java Backend Developer",
         "duration": "3 tháng",
         "description": [
-          "Xây dựng backend Node.js/Express/TypeScript với engine Socket.IO (xử lý chat, nhắn tin nhóm, bình chọn, và livestream).",
+          "Xây dựng backend Node.js/Express/TypeScript với 10 controllers và 22 service modules.",
+          "Triển khai hệ thống nhắn tin thời gian thực hỗ trợ chat, quản lý nhóm, và livestream bằng Socket.IO.",
           "Tích hợp Redis cho quản lý session/caching và Apache Kafka cho event streaming.",
           "Triển khai gọi video peer-to-peer qua WebRTC + LiveKit và hệ thống chatbot AI kép (Gemini & Groq).",
           "Quản lý 6 services bằng Docker Compose + Jenkins CI/CD và deploy lên DigitalOcean.",
@@ -128,7 +129,7 @@
   "contact": {
     "title": "Liên Hệ",
     "subtitle": "Cùng hợp tác",
-    "description": "Tôi hiện đang tìm kiếm cơ hội với vai trò Full Stack Developer. Bất kể bạn có câu hỏi, cơ hội thực tập, hay dự án hợp tác — đừng ngần ngại liên hệ!",
+    "description": "Tôi hiện đang tìm kiếm cơ hội với vai trò Java Backend Developer Intern/Fresher. Bất kể bạn có câu hỏi, cơ hội thực tập, hay dự án hợp tác — đừng ngần ngại liên hệ!",
     "form": {
       "name": "Tên của bạn",
       "email": "Email của bạn",
