@@ -78,7 +78,7 @@ export default function Hero() {
           transition={{ duration: 0.6 }}
         >
           <div className="hero__badge">
-            <HiCode /> {t('hero.greeting')}
+            <span style={{ fontSize: '1.2rem', marginRight: '6px' }}>👋</span> {t('hero.greeting')}
           </div>
 
           <h1 className="hero__name">{t('hero.name')}</h1>
