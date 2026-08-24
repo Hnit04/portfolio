@@ -101,7 +101,7 @@ export default function Hero() {
             <a href="#contact" className="btn btn-outline">
               {t('hero.cta_contact')}
             </a>
-            <a href="/CV_TranCongTinh.pdf" download className="btn btn-outline hero__btn-cv">
+            <a href="/CV_TranCongTinh.html" download className="btn btn-outline hero__btn-cv">
               <HiDownload /> {t('hero.cta_cv')}
             </a>
           </div>

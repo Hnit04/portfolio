@@ -1,0 +1,163 @@
+%-------------------------
+% Resume in LaTeX - Jake's Resume Template
+% Based on: https://github.com/sb2nov/resume
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{carlito}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english,vietnamese]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------PAGE SETUP----------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{#1 \vspace{-2pt}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\fontsize{24pt}{28pt}\selectfont\textbf{TRẦN CÔNG TÍNH}} \\ \vspace{4pt}
+    {\fontsize{12pt}{14pt}\selectfont LẬP TRÌNH VIÊN JAVA BACKEND} \\ \vspace{4pt}
+    \small
+    Hồ Chí Minh \enspace$\cdot$\enspace
+    \href{tel:+84326829327}{0326 829 327} \enspace$\cdot$\enspace
+    \href{mailto:trancongtinh20042004@gmail.com}{trancongtinh20042004@gmail.com} \\[2pt]
+    GitHub: \href{https://github.com/Hnit04}{github.com/Hnit04} \enspace$\cdot$\enspace
+    LinkedIn: \href{https://linkedin.com/in/tinh-tran-484444408}{linkedin.com/in/tinh-tran} \enspace$\cdot$\enspace
+    Portfolio: \href{https://hnit04.github.io/portfolio}{hnit04.github.io/portfolio}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Tóm tắt}
+  \small{
+    Đã xây dựng và triển khai ứng dụng qua 3 dự án thực tế, bao gồm nhiều \textbf{RESTful API} và dịch vụ đóng gói \textbf{Docker}. Vững nền tảng Java Backend với Spring Boot, có thêm kinh nghiệm Node.js. Từng làm việc với kiến trúc Microservices, hệ thống hướng sự kiện (Event-Driven), tích hợp RAG AI và Blockchain. Tiếng Anh: Đọc hiểu tài liệu kỹ thuật tốt, giao tiếp cơ bản. Mục tiêu: Vị trí Java Backend Developer (Thực tập sinh / Fresher).
+  }
+
+%-----------EDUCATION-----------
+\section{Học vấn}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Đại học Công nghiệp TP. Hồ Chí Minh (IUH)}{Dự kiến tốt nghiệp: 03/2027}
+      {Kỹ sư Kỹ thuật Phần mềm}{GPA: 3.3/4.0 (8.0/10)}
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Kỹ năng kỹ thuật}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Backend}{: Java, Spring Boot, Spring Security, Hibernate, Spring Data JPA, Spring Cloud, RESTful API, JWT, Node.js, Express} \\
+     \textbf{Cơ sở dữ liệu}{: PostgreSQL, MongoDB, MariaDB, Redis} \\
+     \textbf{Real-time \& Message Queue}{: Socket.IO, WebSocket (STOMP), RabbitMQ, Apache Kafka} \\
+     \textbf{Kiến trúc}{: Microservices, API Gateway, Circuit Breaker (Resilience4j), Event-Driven} \\
+     \textbf{DevOps}{: Docker, Docker Compose, Nginx, Jenkins CI/CD, AWS S3, Render, Vercel, DigitalOcean} \\
+     \textbf{AI/Blockchain}{: LangChain4j, Gemini API, Groq API, PgVector, ONNX Runtime, FPT AI OCR, Web3j, Hardhat, Solidity} \\
+     \textbf{Frontend}{: React, React Native, Expo, TypeScript, TailwindCSS}
+    }}
+ \end{itemize}
+
+%-----------PROJECTS-----------
+\section{Dự án nổi bật}
+    \resumeSubHeadingListStart
+
+      %--- SmartRental (~45%) ---
+      \resumeSubheading
+        {SmartRental -- Nền tảng Thuê nhà tích hợp AI \& Blockchain}{Khóa luận tốt nghiệp}
+        {Java Backend Developer (Trưởng nhóm, Nhóm 2 người) -- \href{https://github.com/Hnit04/KLTN\_SmartRental}{GitHub} -- \href{https://kltn-smart-rental.vercel.app/}{Live Demo}}{2026}
+          \resumeItemListStart
+            \resumeItem{Thiết kế backend theo kiến trúc module, xây dựng hệ thống \textbf{RESTful API} hoàn chỉnh trên \textbf{Spring Boot 3} và \textbf{PostgreSQL + PgVector}.}
+            \resumeItem{Xây dựng pipeline \textbf{RAG AI} với \textbf{LangChain4j} và \textbf{Gemini API}: nạp dữ liệu, nhúng vector (\textbf{all-MiniLM-L6-v2}), kiểm duyệt nội dung (\textbf{ONNX Runtime}) và chatbot tư vấn theo ngữ cảnh.}
+            \resumeItem{Phát triển thông báo thời gian thực bằng \textbf{WebSocket (STOMP)} với cache \textbf{Caffeine}; tích hợp đăng nhập \textbf{Google OAuth2}, lưu trữ ảnh \textbf{Cloudinary} CDN và xác minh danh tính \textbf{FPT AI OCR} (eKYC).}
+            \resumeItem{Đóng gói bằng \textbf{Docker} multi-stage build (Java 21 + ONNX); triển khai \textbf{Smart Contract} trên mạng Ethereum Sepolia thông qua \textbf{Web3j}.}
+          \resumeItemListEnd
+
+      %--- E-Commerce (~35%) ---
+      \resumeSubheading
+        {E-Commerce -- Thương mại điện tử Đồ Gia Dụng}{Đồ án môn học}
+        {Java Backend Developer (Trưởng nhóm, Nhóm 3 người) -- \href{https://github.com/Hnit04/WebsiteBanDoGiaDung}{GitHub} -- \href{https://tht-giadungthongminh.vercel.app/}{Live Demo}}{2024}
+          \resumeItemListStart
+            \resumeItem{Thiết kế kiến trúc \textbf{Microservices} gồm nhiều service độc lập (nghiệp vụ, API Gateway, Eureka), mỗi service có database \textbf{MongoDB} riêng biệt.}
+            \resumeItem{Cấu hình \textbf{Spring Cloud Gateway} với \textbf{Resilience4j Circuit Breaker}, xác thực \textbf{JWT}, gọi liên service qua \textbf{OpenFeign} và giao tiếp bất đồng bộ qua \textbf{RabbitMQ}.}
+            \resumeItem{Tích hợp cổng thanh toán SEPay QR, cập nhật trạng thái giao dịch realtime qua \textbf{WebSocket (STOMP)}.}
+            \resumeItem{Đóng gói toàn bộ hệ thống bằng \textbf{Docker Compose}; triển khai trên \textbf{Render} và \textbf{Vercel}.}
+          \resumeItemListEnd
+
+      %--- Zala (~30%) ---
+      \resumeSubheading
+        {Zala -- Ứng dụng Nhắn tin Thời gian thực}{Đồ án môn học}
+        {Backend Developer (Nhóm 5 người) -- \href{https://github.com/IUH-CNM-TEAM08}{GitHub} -- \href{https://host-frontend-mu.vercel.app}{Live Demo}}{2024}
+          \resumeItemListStart
+            \resumeItem{Xây dựng backend bằng \textbf{Node.js} với framework \textbf{Express} và \textbf{TypeScript}.}
+            \resumeItem{Triển khai nhắn tin thời gian thực qua \textbf{Socket.IO} hỗ trợ chat nhóm và chat riêng.}
+            \resumeItem{Tích hợp \textbf{Redis} caching và xử lý sự kiện phân tán qua \textbf{Apache Kafka}.}
+            \resumeItem{Phát triển tính năng gọi Video/Audio call bằng \textbf{WebRTC} thông qua máy chủ \textbf{LiveKit}.}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------
+\section{Chứng nhận}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Thành viên Nghiên cứu Khoa học Cấp Trường (SSRC-I)} --- Đại học Công nghiệp TP. Hồ Chí Minh \hfill 2026
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}

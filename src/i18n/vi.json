@@ -53,7 +53,7 @@
         "role": "Leader",
         "duration": "4 tháng",
         "description": [
-          "Thiết kế kiến trúc modular với 6 module nghiệp vụ. Triển khai 20 REST controllers, 33 services và 160+ RESTful APIs với Spring Boot & PostgreSQL + PgVector.",
+          "Thiết kế kiến trúc backend dạng module, xây dựng hệ thống RESTful API hoàn chỉnh với Spring Boot & PostgreSQL + PgVector.",
           "Xây dựng pipeline RAG (Retrieval-Augmented Generation) với LangChain4j và API Gemini để tạo chatbot thông minh.",
           "Triển khai 595 dòng hợp đồng thông minh Solidity trên Ethereum Sepolia cho các hợp đồng thuê nhà bất biến với chữ ký EIP-712.",
           "Triển khai phân quyền truy cập theo vai trò sử dụng xác thực JWT và Spring Security."
@@ -67,16 +67,16 @@
         "role": "Leader",
         "duration": "3 tháng",
         "description": [
-          "Thiết kế kiến trúc 9 microservices (7 business, API Gateway, Eureka) — mỗi service có cơ sở dữ liệu MongoDB riêng.",
+          "Thiết kế kiến trúc microservices gồm nhiều service độc lập (nghiệp vụ, API Gateway, Eureka) — mỗi service có cơ sở dữ liệu MongoDB riêng.",
           "Cấu hình Spring Cloud Gateway với Resilience4j Circuit Breaker và custom JWT filter để định tuyến API an toàn.",
           "Giao tiếp nội bộ qua OpenFeign (đồng bộ) và RabbitMQ (bất đồng bộ); quản lý lỗi bằng Global Exception Handling.",
           "Tích hợp thanh toán mã QR SEPay với cập nhật trạng thái thời gian thực qua WebSocket (STOMP).",
-          "Containerized toàn bộ môi trường microservices chạy 11 service containers bằng Docker Compose; deploy backend lên Render."
+          "Đóng gói toàn bộ hệ thống bằng Docker Compose; deploy backend lên Render."
         ],
         "tags": ["Microservices", "Spring Cloud Gateway", "Eureka", "OpenFeign", "Resilience4j", "RabbitMQ", "MongoDB", "Docker"],
         "github": "https://github.com/Hnit04/WebsiteBanDoGiaDung",
         "demo": "https://tht-giadungthongminh.vercel.app/",
-        "highlights": ["9 Microservices", "Service Discovery (Eureka)", "OpenFeign & RabbitMQ"]
+        "highlights": ["Microservices", "Service Discovery (Eureka)", "OpenFeign & RabbitMQ"]
       },
       {
         "title": "Zala — Nền tảng Nhắn tin Thời gian thực",
@@ -145,6 +145,6 @@
   "footer": {
     "built_with": "Xây dựng với React + Vite",
     "deployed_on": "Triển khai trên Vercel",
-    "copyright": "© 2025 Trần Công Tính. Bảo lưu mọi quyền."
+    "copyright": "© 2026 Trần Công Tính. Bảo lưu mọi quyền."
   }
 }

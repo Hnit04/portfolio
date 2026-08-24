@@ -53,7 +53,7 @@
         "role": "Leader",
         "duration": "4 months",
         "description": [
-          "Designed a modular backend architecture of 6 business modules. Implemented 20 REST controllers, 33 services, and 160+ RESTful APIs with Spring Boot & PostgreSQL + PgVector.",
+          "Designed a modular backend architecture with comprehensive RESTful APIs using Spring Boot & PostgreSQL + PgVector.",
           "Built a Retrieval-Augmented Generation (RAG) pipeline using LangChain4j and Gemini API for context-aware chatbot.",
           "Deployed 595-line Solidity smart contracts on Ethereum Sepolia for immutable lease agreements with EIP-712 signatures.",
           "Implemented role-based access control using JWT authentication and Spring Security."
@@ -67,16 +67,16 @@
         "role": "Leader",
         "duration": "3 months",
         "description": [
-          "Architected 9 microservices (7 business, API Gateway, Eureka) — each with its own MongoDB database.",
+          "Architected microservices (business services, API Gateway, Eureka) — each with its own MongoDB database.",
           "Configured Spring Cloud Gateway with Resilience4j Circuit Breaker and custom JWT filters for fault-tolerant routing.",
           "Implemented inter-service communication using OpenFeign (sync) and RabbitMQ (async), alongside Global Exception Handling.",
           "Integrated SEPay QR code payment with real-time WebSocket (STOMP) status updates.",
-          "Containerized the complete microservices environment running 11 service containers using Docker Compose."
+          "Containerized the complete microservices environment using Docker Compose."
         ],
         "tags": ["Microservices", "Spring Cloud Gateway", "Eureka", "OpenFeign", "Resilience4j", "RabbitMQ", "MongoDB", "Docker"],
         "github": "https://github.com/Hnit04/WebsiteBanDoGiaDung",
         "demo": "https://tht-giadungthongminh.vercel.app/",
-        "highlights": ["9 Microservices", "Service Discovery (Eureka)", "OpenFeign & RabbitMQ"]
+        "highlights": ["Microservices", "Service Discovery (Eureka)", "OpenFeign & RabbitMQ"]
       },
       {
         "title": "Zala — Real-time Messaging Platform",
@@ -145,6 +145,6 @@
   "footer": {
     "built_with": "Built with React + Vite",
     "deployed_on": "Deployed on Vercel",
-    "copyright": "© 2025 Trần Công Tính. All rights reserved."
+    "copyright": "© 2026 Trần Công Tính. All rights reserved."
   }
 }

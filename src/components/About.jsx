@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { HiUser } from 'react-icons/hi';
+import profileImg from '../assets/profile.jpg';
 import './About.css';
 
 const stats = [
@@ -37,7 +38,7 @@ export default function About() {
           >
             <div className="about__avatar">
               <div className="about__avatar-circle">
-                <span>TCT</span>
+                <img src={profileImg} alt="Trần Công Tính" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }} />
               </div>
               <div className="about__avatar-glow" />
             </div>
