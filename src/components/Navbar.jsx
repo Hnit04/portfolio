@@ -43,9 +43,7 @@ export default function Navbar() {
     >
       <div className="navbar__container container">
         <a href="#" className="navbar__logo">
-          <span className="navbar__logo-bracket">{'<'}</span>
-          TCT
-          <span className="navbar__logo-bracket">{'/>'}</span>
+          Tinh<span className="navbar__logo-bracket">.</span>
         </a>
 
         <div className={`navbar__links ${menuOpen ? 'navbar__links--open' : ''}`}>
